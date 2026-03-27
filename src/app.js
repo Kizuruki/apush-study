@@ -337,7 +337,22 @@ function renderHome() {
 function renderUnit() {
   const u = state.selectedUnit;
   const tp = state.topicProgress;
-  
+  const overviewKey = `overview_${u.id}`;
+  const overviewText = state.unitOverviews?.[overviewKey];
+  const overviewHtml = overviewText ? `
+    <div style="background:#F0F7FF;border:1px solid #BFDBFE;border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:10px;letter-spacing:2px;font-weight:700;text-transform:uppercase;color:#1D4ED8;margin-bottom:6px">
+        📋 Unit Overview
+      </div>
+      <div id="overview-body-${u.id}" style="font-size:13px;color:#1E3A5F;line-height:1.75;overflow:hidden;max-height:80px;transition:max-height 0.3s ease">
+        ${esc(overviewText)}
+      </div>
+      <button onclick="toggleOverview(${u.id})" id="overview-toggle-${u.id}"
+        style="margin-top:8px;font-size:11px;color:#1D4ED8;background:none;border:none;cursor:pointer;font-weight:600;padding:0">
+        Show more ▾
+      </button>
+    </div>` : '';
+
   const topicRows = u.topics.map(topic => {
     const k = `${u.id}-${topic.id}`;
     const p = tp[k] || { total:0, correct:0 };
