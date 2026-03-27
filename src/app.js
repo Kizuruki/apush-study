@@ -681,6 +681,20 @@ async function loadFiveableContent(topicId, htmlPath, containerId = null) {
       if (src && !src.startsWith('http') && !src.startsWith('data:')) {
         img.src = new URL(src, base).href;
       }
+      // Also fix srcset
+      const srcset = img.getAttribute('srcset');
+      if (srcset) {
+        const fixedSrcset = srcset.split(',').map(part => {
+          const [url, descriptor] = part.trim().split(/\s+/);
+          if (url && !url.startsWith('http') && !url.startsWith('data:')) {
+            return descriptor 
+              ? `${new URL(url, base).href} ${descriptor}` 
+              : new URL(url, base).href;
+          }
+          return part;
+        }).join(', ');
+        img.setAttribute('srcset', fixedSrcset);
+      }
     });
 
   } catch(e) {
