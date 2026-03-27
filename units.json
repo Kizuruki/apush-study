@@ -1,0 +1,616 @@
+{
+  "units": [
+    {
+      "id": 1, "period": "Period 1", "years": "1491–1607",
+      "sub": "The Americas, Europe & Africa Before Contact",
+      "weight": 5, "color": "#92400E", "examPct": "4–6%",
+      "timeline": [
+        {"y":1491,"e":"Pre-contact societies"},{"y":1492,"e":"Columbus arrives"},
+        {"y":1494,"e":"Treaty of Tordesillas"},{"y":1519,"e":"Aztec Conquest"},
+        {"y":1542,"e":"New Laws"},{"y":1565,"e":"St. Augustine"},{"y":1607,"e":"Jamestown"}
+      ],
+      "topics": [
+        {
+          "id":"1.2","title":"Native American Societies Before European Contact",
+          "theme":"GEO","themeLabel":"Geography & Environment","themeColor":"#10B981",
+          "cedContent":"The spread of maize cultivation from present-day Mexico northward supported economic development, settlement, advanced irrigation, and social diversification. Societies in the Great Basin and Plains developed mobile lifestyles in response to aridity. In the Northeast, Mississippi Valley, and Atlantic seaboard, societies developed mixed agricultural and hunter-gatherer economies favoring permanent villages. Northwest and California societies supported themselves by hunting and gathering, with some developing settled communities from ocean resources.",
+          "keyTerms":["Cahokia","Three Sisters farming","Iroquois Confederacy","Mississippian culture","maize cultivation","nomadic vs. sedentary"],
+          "illustrativeExamples":["Hohokam irrigation networks","Great Plains nomadism","Cahokia (pop. 20,000+)","Iroquois longhouses","Pacific Northwest fishing societies"]
+        },
+        {
+          "id":"1.3","title":"European Exploration in the Americas",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"Improvements in maritime technology and more organized methods for conducting international trade, such as joint-stock companies, supported European exploration. Motivation for exploration and conquest included desire to reach Asian markets, economic competition between nation-states, and spreading Christianity. Spain sent Columbus and later conquistadors to challenge Portuguese expansion and bring wealth back to Spain.",
+          "keyTerms":["joint-stock companies","caravel","astrolabe","Treaty of Tordesillas","conquistadors","Reconquista"],
+          "illustrativeExamples":["Columbus's voyages 1492–1504","Treaty of Tordesillas (1494)","John Cabot for England (1497)","Spanish conquest of Aztec and Inca","Portuguese exploration of African coast"]
+        },
+        {
+          "id":"1.4","title":"Columbian Exchange, Spanish Exploration & Conquest",
+          "theme":"GEO","themeLabel":"Geography & Environment","themeColor":"#10B981",
+          "cedContent":"Spanish exploration and conquest were accompanied by widespread deadly epidemics that devastated native populations. New crops (maize, potatoes) contributed to population growth in Europe. Introduction of livestock wreaked havoc on Indigenous lands while introduction of the horse revolutionized hunting and warfare. Native American populations declined by up to 90% in many regions.",
+          "keyTerms":["Columbian Exchange","smallpox epidemic","demographic collapse","encomienda","Potosí silver mines","missionary activity"],
+          "illustrativeExamples":["Potato and maize to Europe","Smallpox devastates Native populations","Cortés conquers Aztec Empire (1519–21)","Pizarro conquers Inca (1532–33)","Introduction of horses to Plains peoples"]
+        },
+        {
+          "id":"1.5","title":"Labor, Slavery & Caste in the Spanish Colonial System",
+          "theme":"SOC","themeLabel":"Social Structures","themeColor":"#A855F7",
+          "cedContent":"The Spanish developed a caste system (castas) that incorporated and carefully defined the status of the diverse population of New Spain — peninsulares, criollos, mestizos, mulattoes, Native Americans, and enslaved Africans. The encomienda system marshaled Native labor for agriculture and silver mining. The need for labor led to development of the Trans-Atlantic slave trade.",
+          "keyTerms":["encomienda","castas system","peninsulares","criollos","mestizos","Requerimiento","Trans-Atlantic slave trade"],
+          "illustrativeExamples":["Mines of Potosí","Requerimiento (1513)","New Laws (1542) attempted reform","Bartolomé de las Casas's critique","Spanish treasure fleet"]
+        },
+        {
+          "id":"1.6","title":"Cultural Interactions Between Europeans, Native Americans & Africans",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"As European encroachments on Native lands increased, native peoples sought to defend their lands and ways of life through military resistance and diplomatic negotiations. Europeans and Native Americans had divergent worldviews on land ownership (communal vs. private), religion (polytheistic/animistic vs. monotheistic), and gender roles. Europeans like Sepúlveda and Las Casas debated the treatment of Indigenous people. Some groups allied with Europeans; others resisted through the Pueblo and Taino revolts.",
+          "keyTerms":["syncretism","Pueblo Revolt","Virgin of Guadalupe","Las Casas vs. Sepúlveda","differing worldviews","cultural exchange"],
+          "illustrativeExamples":["Cupul Uprising","Pueblo Revolt (1680)","Virgin of Guadalupe as syncretism","Allied tribes helped Cortés defeat Aztec","Adoption of Indigenous words: canoe, hammock, moccasin"]
+        }
+      ]
+    },
+    {
+      "id": 2, "period": "Period 2", "years": "1607–1754",
+      "sub": "Colonial Settlement, Slavery & Society",
+      "weight": 7, "color": "#14532D", "examPct": "6–8%",
+      "timeline": [
+        {"y":1607,"e":"Jamestown founded"},{"y":1619,"e":"First Africans; House of Burgesses"},
+        {"y":1620,"e":"Plymouth Colony"},{"y":1676,"e":"Bacon's Rebellion"},
+        {"y":1692,"e":"Salem Witch Trials"},{"y":1739,"e":"Stono Rebellion"},{"y":1754,"e":"F&I War begins"}
+      ],
+      "topics": [
+        {
+          "id":"2.2","title":"European Colonization",
+          "theme":"MIG","themeLabel":"Migration & Settlement","themeColor":"#F59E0B",
+          "cedContent":"French and Dutch colonial efforts involved relatively few Europeans and relied on trade alliances and intermarriage with Native peoples. English colonization attracted a comparatively large number of male and female British migrants, as well as others from across Europe. The headright system attracted settlers; indentured servitude provided initial labor but transitioned to hereditary racial slavery after Bacon's Rebellion (1676).",
+          "keyTerms":["headright system","indentured servitude","Bacon's Rebellion","proprietary colonies","charter colonies","royal colonies"],
+          "illustrativeExamples":["Jamestown (1607) — first successful English colony","Plymouth Colony (1620) — Puritan separatists","Massachusetts Bay Colony (1630)","New France fur trade alliances","Dutch New Amsterdam (later New York)"]
+        },
+        {
+          "id":"2.3","title":"The Regions of British Colonies",
+          "theme":"GEO","themeLabel":"Geography & Environment","themeColor":"#10B981",
+          "cedContent":"The middle colonies supported a flourishing export economy based on cereal crops and attracted a broad range of European settlers. The colonies of the southern Atlantic coast used long growing seasons to develop plantation economies. New England colonies developed around Puritan town meeting governance, subsistence farming, and strong communal identity. The colonies developed distinct regional cultures shaped by religion, economy, and geography.",
+          "keyTerms":["plantation economy","Puritan covenant","town meeting","indigo","tobacco","rice","subsistence farming"],
+          "illustrativeExamples":["New England: Puritan theocracy, town meetings","Middle colonies: diverse, commercial farming (Penn's 'Holy Experiment')","Chesapeake: tobacco plantations, House of Burgesses","Carolina low country: rice and indigo with enslaved labor"]
+        },
+        {
+          "id":"2.4","title":"Transatlantic Trade",
+          "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
+          "cedContent":"The British government increasingly attempted to incorporate its North American colonies into a coherent, hierarchical imperial structure through mercantilist policies including the Navigation Acts. Continuing trade with Europeans increased the flow of goods in and out of American Indian communities, stimulating cultural and demographic changes. The doctrine of salutary neglect in practice allowed colonial assemblies significant autonomy.",
+          "keyTerms":["mercantilism","Navigation Acts","triangular trade","salutary neglect","colonial assemblies","Board of Trade"],
+          "illustrativeExamples":["Navigation Acts (1651, 1660, 1663)","Triangular trade: colonies–Africa–Europe","Growing merchant class in port cities","Molasses Act (1733)","Dominion of New England (1686)"]
+        },
+        {
+          "id":"2.5","title":"Interactions Between American Indians and Europeans",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"British conflicts with American Indians over land, resources, and political boundaries led to military confrontations. American Indian resistance to Spanish colonizing efforts, particularly after the Pueblo Revolt, led to Spanish accommodation of some aspects of Native culture. Fur trade alliances reshaped Native societies; King Philip's War (1675–76) devastated New England Native populations.",
+          "keyTerms":["King Philip's War","Pueblo Revolt","fur trade alliances","Opechancanough","treaty violations","mission system"],
+          "illustrativeExamples":["King Philip's (Metacom's) War 1675–76","Pueblo Revolt (1680)","Great Peace of Montreal (1701)","Spanish mission system in California","Opechancanough's resistance in Virginia"]
+        },
+        {
+          "id":"2.6","title":"Slavery in the British Colonies",
+          "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
+          "cedContent":"As chattel slavery became the dominant labor system in many southern colonies, new laws created a strict racial system that distinguished between free and enslaved people. Slave codes codified racial hierarchy and stripped enslaved people of legal rights. The shift from indentured servitude to hereditary racial slavery accelerated after Bacon's Rebellion. Enslaved people resisted through a variety of means including revolts.",
+          "keyTerms":["chattel slavery","slave codes","Middle Passage","Stono Rebellion","hereditary slavery","Royal African Company"],
+          "illustrativeExamples":["Virginia Slave Codes (1705)","Stono Rebellion (1739)","Middle Passage mortality","Maryland Anti-Amalgamation Law (1664)","First Maroon War (Jamaica)"]
+        },
+        {
+          "id":"2.7","title":"Colonial Society and Culture",
+          "theme":"ARC","themeLabel":"American & Regional Culture","themeColor":"#F97316",
+          "cedContent":"The British colonies experienced gradual Anglicization over time, developing autonomous political communities based on English models. Colonists' resistance to imperial control drew on local experiences of self-government and evolving ideas of liberty. The First Great Awakening (1730s–40s) challenged established religious hierarchies and fostered a sense of common identity. Transatlantic print culture expanded literacy and political ideas.",
+          "keyTerms":["First Great Awakening","George Whitefield","Jonathan Edwards","Anglicization","colonial assemblies","print culture","Enlightenment"],
+          "illustrativeExamples":["First Great Awakening (1730s–40s)","Jonathan Edwards 'Sinners in the Hands of an Angry God'","Boston News-Letter (first newspaper 1704)","Zenger Trial (1735) — free press","Colonial assemblies gaining power"]
+        }
+      ]
+    },
+    {
+      "id": 3, "period": "Period 3", "years": "1754–1800",
+      "sub": "Revolution, Independence & the New Republic",
+      "weight": 13, "color": "#1E3A5F", "examPct": "10–17%",
+      "timeline": [
+        {"y":1754,"e":"F&I War begins"},{"y":1763,"e":"Proclamation Line"},
+        {"y":1765,"e":"Stamp Act"},{"y":1775,"e":"War begins"},
+        {"y":1776,"e":"Independence"},{"y":1781,"e":"Articles of Confederation"},
+        {"y":1787,"e":"Constitution"},{"y":1798,"e":"Alien & Sedition Acts"}
+      ],
+      "topics": [
+        {
+          "id":"3.2","title":"The Seven Years' War (French and Indian War)",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"Britain achieved a major expansion of its territorial holdings by defeating the French, but at tremendous expense, setting the stage for conflicts with colonists over how to pay for the war. After the British victory, imperial officials' attempts to prevent colonists from moving westward generated colonial opposition to the Proclamation of 1763. The war gave colonists military experience and a growing sense of identity distinct from Britain.",
+          "keyTerms":["Proclamation of 1763","Treaty of Paris (1763)","Albany Plan of Union","Pontiac's Rebellion","French and Indian War","British war debt"],
+          "illustrativeExamples":["Battle of Quebec (1759)","Treaty of Paris (1763) — France cedes Canada","Proclamation of 1763 — colonists prohibited from moving west","Pontiac's Rebellion (1763)","Albany Plan of Union (1754) — Franklin's proposal"]
+        },
+        {
+          "id":"3.3","title":"Taxation Without Representation",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"Colonial leaders based their calls for resistance on arguments about the rights of British subjects, the rights of the colonists as human beings, and ideas of popular sovereignty. The effort for independence was energized by colonial leaders such as Benjamin Franklin and Samuel Adams, as well as by popular movements including boycotts. Men and women mobilized in large numbers to resist parliamentary taxation.",
+          "keyTerms":["Stamp Act","Townshend Acts","Sons of Liberty","Daughters of Liberty","committees of correspondence","virtual vs. actual representation","Tea Act","Intolerable Acts"],
+          "illustrativeExamples":["Stamp Act (1765) — first direct tax","Boston Massacre (1770)","Tea Party (1773)","Stamp Act Congress (1765)","Intolerable/Coercive Acts (1774)","'No taxation without representation'"]
+        },
+        {
+          "id":"3.4","title":"Philosophical Foundations of the American Revolution",
+          "theme":"NAT","themeLabel":"American & National Identity","themeColor":"#3B82F6",
+          "cedContent":"The colonists' belief in the superiority of republican forms of government based on the natural rights of the people found expression in Thomas Paine's Common Sense and the Declaration of Independence. Enlightenment ideas — Locke's natural rights, social contract theory — shaped revolutionary ideology. Religion also strengthened Americans' view of liberty through concepts like covenant theology.",
+          "keyTerms":["natural rights","social contract","Locke's Two Treatises","Common Sense","Declaration of Independence","republican ideology","popular sovereignty"],
+          "illustrativeExamples":["Thomas Paine's Common Sense (1776)","Declaration of Independence (1776)","John Locke's Two Treatises of Government","Rousseau's Social Contract","'Life, Liberty, and the pursuit of Happiness'"]
+        },
+        {
+          "id":"3.5","title":"The American Revolution",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"The Revolution was characterized by Loyalist opposition, debates about the nature of republican government, and various groups seeking to use the ideology of the Revolution to support their own goals. French alliance after Saratoga (1777) was crucial. The Treaty of Paris (1783) recognized US independence. Democratic ideals spread globally but limits of revolutionary change remained for enslaved people, women, and Native Americans.",
+          "keyTerms":["Continental Army","Valley Forge","Battle of Saratoga","French Alliance","Treaty of Paris (1783)","Loyalists vs. Patriots","guerrilla warfare"],
+          "illustrativeExamples":["Battle of Saratoga (1777) — turning point","French Alliance (1778)","Valley Forge winter (1777–78)","Treaty of Paris (1783)","Native Americans lost British ally","Oneidas and Tuscaroras supported Patriots"]
+        },
+        {
+          "id":"3.6","title":"The Influence of Revolutionary Ideals",
+          "theme":"SOC","themeLabel":"Social Structures","themeColor":"#A855F7",
+          "cedContent":"In response to women's participation in the Revolution, Enlightenment ideas, and women's appeals, new ideas about women's roles emerged, including 'republican motherhood.' Revolutionary ideals led to gradual emancipation in the North and calls for abolition. However, the limits of revolutionary change remained — enslaved people, women, and Native peoples were largely excluded from expanded rights.",
+          "keyTerms":["republican motherhood","gradual emancipation","Abigail Adams","Vermont constitution","Pennsylvania Gradual Abolition Act","limits of revolution"],
+          "illustrativeExamples":["Pennsylvania Gradual Abolition Act (1780)","Abigail Adams: 'Remember the Ladies'","Vermont banned slavery in its constitution","Vermont and Massachusetts abolition","Growth of abolitionist societies in North"]
+        },
+        {
+          "id":"3.7","title":"The Articles of Confederation",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"The Articles of Confederation unified the newly independent states, creating a central government with limited power. Articles gave Congress no power to tax, regulate commerce, or enforce laws. Successes included the Land Ordinance of 1785 and Northwest Ordinance (1787), which banned slavery north of the Ohio River. Shays' Rebellion (1786) exposed weaknesses and led directly to the Constitutional Convention.",
+          "keyTerms":["Articles of Confederation","Northwest Ordinance","Land Ordinance of 1785","Shays' Rebellion","weak central government","state sovereignty"],
+          "illustrativeExamples":["Land Ordinance of 1785 — systematic land sale","Northwest Ordinance (1787) — banned slavery in territories","Shays' Rebellion (1786–87)","Each state had one vote regardless of size","Congress could not tax — relied on state contributions"]
+        },
+        {
+          "id":"3.8","title":"The Constitutional Convention & Debates over Ratification",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"The Constitutional Convention compromised over the representation of slave states in Congress (Three-Fifths Compromise) and the role of the federal government. In the ratification debate, Anti-Federalists opposing ratification battled with Federalists, whose position was articulated in the Federalist Papers. The Bill of Rights was added to secure ratification by Anti-Federalists who feared concentrated power.",
+          "keyTerms":["Great Compromise","Three-Fifths Compromise","Federalists","Anti-Federalists","Federalist Papers","Bill of Rights","separation of powers","checks and balances"],
+          "illustrativeExamples":["Great Compromise — bicameral legislature","Three-Fifths Compromise","Federalist Papers (Hamilton, Jay, Madison)","Bill of Rights (1791)","Anti-Federalists: Patrick Henry, George Mason"]
+        },
+        {
+          "id":"3.9","title":"The Constitution",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"The Constitution established a federal structure balancing state and national power. Enumerated powers and the elastic clause defined the scope of federal authority. Judicial review was later established by Marbury v. Madison (1803). The amendment process provided flexibility. The Bill of Rights protected individual liberties from federal overreach.",
+          "keyTerms":["enumerated powers","elastic clause","judicial review","Marbury v. Madison","federalism","reserved powers","supremacy clause"],
+          "illustrativeExamples":["Article I (Congress)","Article II (Executive)","Article III (Judiciary)","Marbury v. Madison (1803) — judicial review","10th Amendment — reserved powers to states"]
+        },
+        {
+          "id":"3.10","title":"Shaping a New Republic",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"War between France and Britain resulting from the French Revolution presented challenges to the United States over issues of neutrality, impressment, and trade. Washington set key precedents including the Cabinet system and serving only two terms. Hamilton's financial plan (national bank, assumption of state debts) clashed with Jefferson's agrarian vision, creating the first political parties. The Whiskey Rebellion demonstrated federal authority.",
+          "keyTerms":["Hamilton's financial plan","National Bank","Whiskey Rebellion","Neutrality Proclamation","Jay's Treaty","XYZ Affair","Alien and Sedition Acts","Federalists vs. Democratic-Republicans"],
+          "illustrativeExamples":["Hamilton's Financial Plan (1790)","Whiskey Rebellion (1794)","Neutrality Proclamation (1793)","Jay's Treaty (1795)","XYZ Affair (1797)","Alien and Sedition Acts (1798)","Virginia and Kentucky Resolutions (1798–99)"]
+        }
+      ]
+    },
+    {
+      "id": 4, "period": "Period 4", "years": "1800–1848",
+      "sub": "Democracy, Market Revolution & Reform",
+      "weight": 13, "color": "#4C2A1A", "examPct": "10–17%",
+      "timeline": [
+        {"y":1800,"e":"Jefferson elected"},{"y":1803,"e":"Louisiana Purchase"},
+        {"y":1812,"e":"War of 1812"},{"y":1820,"e":"Missouri Compromise"},
+        {"y":1823,"e":"Monroe Doctrine"},{"y":1830,"e":"Indian Removal Act"},
+        {"y":1831,"e":"Nat Turner's Rebellion"},{"y":1848,"e":"Seneca Falls Convention"}
+      ],
+      "topics": [
+        {
+          "id":"4.2","title":"The Rise of Political Parties & Era of Jefferson",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"Supreme Court decisions (Marbury v. Madison, McCulloch v. Maryland) established the primacy of the judiciary and asserted implied powers. Following the Louisiana Purchase, the US government sought influence and control over North America through military, diplomatic, and economic means. The 'Revolution of 1800' was a peaceful transfer of power. The Embargo Act and War of 1812 reflected challenges of maintaining neutrality.",
+          "keyTerms":["Marbury v. Madison","McCulloch v. Maryland","Louisiana Purchase","Lewis and Clark","Embargo Act","Era of Good Feelings","strict vs. loose construction"],
+          "illustrativeExamples":["Marbury v. Madison (1803) — judicial review","Louisiana Purchase (1803) doubled US territory","Lewis and Clark Expedition (1804–06)","Embargo Act (1807)","War of 1812","McCulloch v. Maryland (1819)"]
+        },
+        {
+          "id":"4.3","title":"Politics and Regional Interests",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"Congressional attempts at political compromise, such as the Missouri Compromise (1820), only temporarily stemmed growing tensions over the expansion of slavery. Regional economic interests diverged sharply: North favored manufacturing and tariffs; South depended on slavery and opposed tariffs; West wanted cheap land and transportation improvements. The nullification crisis revealed the tension between state and federal power.",
+          "keyTerms":["Missouri Compromise","Tariff of Abominations","nullification crisis","sectionalism","Calhoun's nullification theory","sectional compromise"],
+          "illustrativeExamples":["Missouri Compromise (1820) — 36°30' line","Tariff of Abominations (1828)","South Carolina Exposition (Calhoun, 1828)","Nullification Crisis (1832–33)","Compromise Tariff of 1833"]
+        },
+        {
+          "id":"4.5","title":"Market Revolution: Industrialization",
+          "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
+          "cedContent":"Innovations including textile machinery, steam engines, interchangeable parts, the telegraph, and agricultural inventions contributed to the Market Revolution. Legislation and judicial systems supported development of roads, canals, and railroads. The Lowell System employed young women in New England textile mills. Increasing Southern cotton production and Northern manufacturing created growing economic interdependence and sectional tension.",
+          "keyTerms":["Market Revolution","Lowell System","Erie Canal","interchangeable parts","telegraph","railroads","putting-out system"],
+          "illustrativeExamples":["Erie Canal (1825)","Lowell Mills — employed young women","Eli Whitney's cotton gin (1793) and interchangeable parts","Samuel Morse's telegraph (1844)","Transcontinental railroad projects","Robert Fulton's steamboat (1807)"]
+        },
+        {
+          "id":"4.6","title":"Market Revolution: Society and Culture",
+          "theme":"SOC","themeLabel":"Social Structures","themeColor":"#A855F7",
+          "cedContent":"The growth of manufacturing drove a significant increase in prosperity for some and the emergence of a middle class. Gender and family roles changed in response to the Market Revolution, particularly with the growth of definitions of domesticity separating home from workplace (Cult of Domesticity). Increasing numbers of factory workers no longer relied on semi-subsistence agriculture. Irish and German immigration transformed northern cities.",
+          "keyTerms":["Cult of Domesticity","separate spheres","middle class","Irish immigration","German immigration","wage labor","consumer culture"],
+          "illustrativeExamples":["Lowell mill girls","Cult of Domesticity and 'True Womanhood'","Irish immigration (post-1845 famine)","German immigration (1848 revolutions)","Commonwealth v. Hunt (1842) — unions legal"]
+        },
+        {
+          "id":"4.7","title":"Expanding Democracy",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"Democratic reforms in the 1820s–30s expanded voting rights for white men by eliminating property requirements. New political parties rose: Jackson's Democrats favored limited government and states' rights; the Whig Party opposed Jackson. The spoils system (patronage) replaced merit in government appointments. Increased voter participation and mass political rallies transformed American politics. Women, Black Americans, and Native peoples remained excluded.",
+          "keyTerms":["universal (white male) suffrage","spoils system","patronage","Whig Party","Democratic Party","two-party system","mass political culture"],
+          "illustrativeExamples":["Removal of property requirements for white men","Jackson's Kitchen Cabinet","Specie Circular (1836)","Anti-Masonic Party (first third party)","William Henry Harrison 'Log Cabin' campaign (1840)"]
+        },
+        {
+          "id":"4.8","title":"Jackson and Federal Power",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"Frontier settlers championed expansion while American Indian resistance led to a sequence of wars and federal efforts to relocate Native peoples. Jackson's Bank War killed the Second Bank of the United States. The Indian Removal Act (1830) forced Cherokee, Creek, and other nations westward along the Trail of Tears. Jackson's actions revealed tensions between democratic rhetoric and the expansion of slavery and Native removal.",
+          "keyTerms":["Indian Removal Act","Trail of Tears","Worcester v. Georgia","Bank War","Second Bank of the US","Jackson's veto","federal vs. state power"],
+          "illustrativeExamples":["Indian Removal Act (1830)","Trail of Tears (1838–39) — 4,000+ Cherokee deaths","Worcester v. Georgia (1832) — Jackson defied Supreme Court","Bank War (1832–36)","Specie Circular (1836) triggered Panic of 1837"]
+        },
+        {
+          "id":"4.10","title":"The Second Great Awakening",
+          "theme":"ARC","themeLabel":"American & Regional Culture","themeColor":"#F97316",
+          "cedContent":"The Second Great Awakening emphasized moral improvement, social perfection, and personal salvation through revivalism. Camp meetings and Charles Finney's preaching spread in northern cities. The African Methodist Episcopal Church and other Black religious institutions developed. The revival linked to social reform movements including temperance, abolitionism, and women's rights. Utopian communities (Oneida, Brook Farm) reflected perfectionist ideals.",
+          "keyTerms":["Second Great Awakening","Charles Finney","camp meetings","revivalism","burned-over district","AME Church","utopian communities"],
+          "illustrativeExamples":["Charles Finney's revivals in burned-over district","African Methodist Episcopal Church (AME)","Oneida Community (utopian)","Brook Farm (Transcendentalist utopia)","Temperance movement — American Temperance Society"]
+        },
+        {
+          "id":"4.11","title":"An Age of Reform",
+          "theme":"ARC","themeLabel":"American & Regional Culture","themeColor":"#F97316",
+          "cedContent":"Americans formed voluntary organizations aimed at changing individual behaviors and improving society through temperance, abolition, education, and prison reform. Abolitionist and antislavery movements gradually achieved emancipation in the North and contributed to the growth of the free Black community. Women's involvement in abolitionism contributed to the Seneca Falls Convention and early women's rights movement.",
+          "keyTerms":["abolitionism","William Lloyd Garrison","Frederick Douglass","Grimké sisters","Seneca Falls","Declaration of Sentiments","Horace Mann","Dorothea Dix"],
+          "illustrativeExamples":["Garrison's The Liberator (1831)","Douglass's Narrative (1845)","Grimké sisters speaking publicly","Seneca Falls Convention (1848)","Horace Mann's public education reform","Dorothea Dix's prison/asylum reform","Amistad Case (1841)"]
+        },
+        {
+          "id":"4.13","title":"The Society of the South in the Early Republic",
+          "theme":"GEO","themeLabel":"Geography & Environment","themeColor":"#10B981",
+          "cedContent":"Southern business leaders continued to rely on production and export of traditional agricultural staples (cotton, tobacco, rice, indigo). As overcultivation depleted arable land in the Southeast, slaveholders relocated plantations to more fertile lands in the Deep South and West, expanding slavery's reach. The defense of slavery evolved from 'necessary evil' to 'positive good.' Enslaved people resisted through both overt and covert means.",
+          "keyTerms":["cotton kingdom","King Cotton","slave power","Nat Turner's Rebellion","Denmark Vesey","Gabriel Prosser","positive good argument","paternalism"],
+          "illustrativeExamples":["Cotton gin expanded slavery westward","Nat Turner's Rebellion (1831)","Calhoun: 'Slavery as a Positive Good' (1837)","Gabriel Prosser's Rebellion (1800)","Denmark Vesey's conspiracy (1822)","Internal slave trade and 'Second Middle Passage'"]
+        }
+      ]
+    },
+    {
+      "id": 5, "period": "Period 5", "years": "1844–1877",
+      "sub": "Expansion, Civil War & Reconstruction",
+      "weight": 13, "color": "#5C1A1A", "examPct": "10–17%",
+      "timeline": [
+        {"y":1845,"e":"Texas annexed"},{"y":1846,"e":"Mexican-American War"},
+        {"y":1850,"e":"Compromise"},{"y":1854,"e":"Kansas-Nebraska Act"},
+        {"y":1857,"e":"Dred Scott"},{"y":1861,"e":"Civil War begins"},
+        {"y":1863,"e":"Emancipation Proclamation"},{"y":1865,"e":"13th Amendment"},{"y":1877,"e":"Compromise of 1877"}
+      ],
+      "topics": [
+        {
+          "id":"5.2","title":"Manifest Destiny",
+          "theme":"GEO","themeLabel":"Geography & Environment","themeColor":"#10B981",
+          "cedContent":"Advocates of annexing western lands argued that Manifest Destiny and the superiority of American institutions compelled the United States to expand. Westward migration was boosted by the passage of new legislation promoting western transportation and land sales. US interest in expanding trade led to economic, diplomatic, and cultural initiatives with Asia. Expansion displaced and destroyed Native peoples and led to conflict with Mexico.",
+          "keyTerms":["Manifest Destiny","Oregon Trail","49th parallel","Oregon Treaty","Texas annexation","expansionism","'Fifty-Four Forty or Fight'"],
+          "illustrativeExamples":["Oregon Treaty (1846) — 49th parallel","Texas annexation (1845)","Mormon migration to Utah","Oregon Trail migrants","John L. O'Sullivan coined 'Manifest Destiny' (1845)","Gadsden Purchase (1853)"]
+        },
+        {
+          "id":"5.3","title":"The Mexican-American War",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"US government interaction and conflict with Mexican Americans and American Indians increased in regions newly taken from Mexico. Questions about the status of slavery in newly acquired territories (Wilmot Proviso) reignited sectional tensions. Treaty of Guadalupe Hidalgo gave US a huge territory — California, New Mexico, Arizona. The war intensified the slavery debate more than any previous event.",
+          "keyTerms":["Wilmot Proviso","Treaty of Guadalupe Hidalgo","Mexican Cession","California","popular sovereignty","Californios"],
+          "illustrativeExamples":["Wilmot Proviso (1846) — banned slavery in new territory","Treaty of Guadalupe Hidalgo (1848)","Mexican Cession — 500,000 sq. miles","Frederick Douglass opposed the war","Henry David Thoreau: 'Civil Disobedience'","Californios lost land under US rule"]
+        },
+        {
+          "id":"5.4","title":"The Compromise of 1850",
+          "theme":"NAT","themeLabel":"American & National Identity","themeColor":"#3B82F6",
+          "cedContent":"The Compromise of 1850 admitted California as a free state, applied popular sovereignty in Utah and New Mexico territories, strengthened the Fugitive Slave Act, and ended the slave trade in Washington DC. Uncle Tom's Cabin (1852) had enormous cultural impact on Northern opinion. The compromise only temporarily reduced sectional tensions without resolving the fundamental conflict over slavery's expansion.",
+          "keyTerms":["Compromise of 1850","Fugitive Slave Act","popular sovereignty","Uncle Tom's Cabin","personal liberty laws","Clay's omnibus bill"],
+          "illustrativeExamples":["California admitted as free state","Fugitive Slave Act (1850) — required Northern compliance","Uncle Tom's Cabin (Harriet Beecher Stowe, 1852)","Personal liberty laws in Northern states","Underground Railroad expanded after 1850"]
+        },
+        {
+          "id":"5.6","title":"Failure of Compromise",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"The Second Party System ended when the issues of slavery and anti-immigrant nativism weakened loyalties to the two major parties. The Kansas-Nebraska Act (1854) repealed the Missouri Compromise's ban on slavery north of 36°30', leading to 'Bleeding Kansas' violence. The Republican Party formed on an anti-slavery-extension platform. Dred Scott v. Sandford (1857) ruled that Congress could not ban slavery in territories. John Brown's Harper's Ferry raid (1859) intensified Southern fears.",
+          "keyTerms":["Kansas-Nebraska Act","Bleeding Kansas","Republican Party","Dred Scott decision","John Brown","Harper's Ferry","Know-Nothing Party"],
+          "illustrativeExamples":["Kansas-Nebraska Act (1854) — repealed Missouri Compromise","Bleeding Kansas violence (1854–58)","Republican Party founded (1854)","Dred Scott v. Sandford (1857)","John Brown's Harper's Ferry raid (1859)","Caning of Senator Sumner (1856)"]
+        },
+        {
+          "id":"5.7","title":"Election of 1860 and Secession",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"Debates about secession centered on whether states had the right to leave the Union and whether slavery could be protected in the territories. Lincoln's election on an anti-slavery-extension platform triggered Deep South secession. Alexander Stephens's 'Cornerstone Speech' explicitly stated slavery was the 'cornerstone' of the Confederacy. Fort Sumter's attack (April 1861) began the war.",
+          "keyTerms":["Election of 1860","secession","Confederate States","Jefferson Davis","Fort Sumter","border states","Constitutional crisis"],
+          "illustrativeExamples":["Lincoln elected without a single Southern electoral vote","South Carolina seceded (December 1860)","Confederate Constitution","Jefferson Davis — Confederate President","Fort Sumter attack (April 12, 1861)","Cornerstone Speech (Stephens, 1861)"]
+        },
+        {
+          "id":"5.8","title":"Military Conflict in the Civil War",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"Although the Confederacy showed military initiative and daring early in the war, the Union ultimately succeeded due to its greater manpower and industrial resources. The Union employed a strategy of total war including the Anaconda Plan (naval blockade), Grant's brutal attrition strategy, and Sherman's March to the Sea. Antietam (Sept 1862) was the bloodiest single day and enabled the Emancipation Proclamation. Gettysburg (July 1863) was the turning point.",
+          "keyTerms":["total war","Anaconda Plan","Battle of Antietam","Battle of Gettysburg","Sherman's March","Ulysses S. Grant","Robert E. Lee"],
+          "illustrativeExamples":["Anaconda Plan — naval blockade","Battle of Antietam (Sept 1862) — deadliest day","Battle of Gettysburg (July 1863) — turning point","Sherman's March to the Sea (1864)","Grant's Petersburg siege (1864–65)","King Cotton diplomacy failed — Britain stayed neutral"]
+        },
+        {
+          "id":"5.9","title":"Government Policies During the Civil War",
+          "theme":"NAT","themeLabel":"American & National Identity","themeColor":"#3B82F6",
+          "cedContent":"Lincoln sought to reunify the country and used speeches such as the Gettysburg Address to portray the struggle against slavery as central to American identity. The Emancipation Proclamation (January 1, 1863) transformed the war's aims from Union preservation to freedom. African Americans served in the Union Army (180,000+) and played a crucial role. The 13th Amendment permanently abolished slavery. Federal power expanded dramatically through income tax, the Homestead Act, and Pacific Railroad Act.",
+          "keyTerms":["Emancipation Proclamation","13th Amendment","Gettysburg Address","African American soldiers","54th Massachusetts","Homestead Act","income tax"],
+          "illustrativeExamples":["Emancipation Proclamation (Jan 1, 1863)","54th Massachusetts Infantry Regiment","Gettysburg Address (Nov 1863)","13th Amendment (1865) — abolished slavery","Homestead Act (1862)","Pacific Railroad Act (1862)","First income tax (1861)"]
+        },
+        {
+          "id":"5.10","title":"Reconstruction",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"The 13th Amendment abolished slavery, while the 14th and 15th amendments granted African Americans citizenship, equal protection, and voting rights. Radical Republicans sought to change the balance of power and restructure Southern society. Freedmen's Bureau provided education and assistance. African Americans participated in Southern politics — 16 Black congressmen, 2 Black senators. The women's rights movement was both emboldened and divided over the 14th and 15th amendments.",
+          "keyTerms":["Radical Reconstruction","14th Amendment","15th Amendment","Freedmen's Bureau","carpetbaggers","scalawags","Black codes","sharecropping"],
+          "illustrativeExamples":["13th, 14th, 15th Amendments (1865, 1868, 1870)","Freedmen's Bureau (1865)","Hiram Revels — first Black senator","Black codes in Southern states","KKK founded (1865)","Congressional Reconstruction Acts (1867)"]
+        },
+        {
+          "id":"5.11","title":"Failure of Reconstruction",
+          "theme":"NAT","themeLabel":"American & National Identity","themeColor":"#3B82F6",
+          "cedContent":"Segregation, violence, Supreme Court decisions, and local political tactics progressively stripped away African Americans' political rights and economic opportunities. The Compromise of 1877 withdrew federal troops from the South. Redeemer governments dismantled Reconstruction reforms. KKK terror suppressed Black political participation. The Supreme Court limited the 14th Amendment in the Civil Rights Cases (1883). Sharecropping and debt peonage replaced formal slavery.",
+          "keyTerms":["Compromise of 1877","Redeemers","KKK","sharecropping","debt peonage","Civil Rights Cases (1883)","Plessy v. Ferguson","Jim Crow"],
+          "illustrativeExamples":["Compromise of 1877 — Hayes becomes president, troops withdrawn","Civil Rights Cases (1883) — 14th Amendment limited","Convict leasing system","Ida B. Wells documented lynching","Sharecropping and crop lien system","Poll taxes, literacy tests, grandfather clauses"]
+        }
+      ]
+    },
+    {
+      "id": 6, "period": "Period 6", "years": "1865–1898",
+      "sub": "The Gilded Age & Industrial Capitalism",
+      "weight": 13, "color": "#1A4731", "examPct": "10–17%",
+      "timeline": [
+        {"y":1869,"e":"Transcontinental RR"},{"y":1877,"e":"Reconstruction ends"},
+        {"y":1882,"e":"Chinese Exclusion Act"},{"y":1886,"e":"Haymarket Affair"},
+        {"y":1887,"e":"Interstate Commerce Act"},{"y":1890,"e":"Sherman Antitrust Act"},
+        {"y":1892,"e":"Homestead Strike"},{"y":1896,"e":"Plessy v. Ferguson"}
+      ],
+      "topics": [
+        {
+          "id":"6.3","title":"Westward Expansion: Social & Cultural Development",
+          "theme":"MIG","themeLabel":"Migration & Settlement","themeColor":"#F59E0B",
+          "cedContent":"As migrant populations increased and the American bison population was decimated, competition for land and resources in the West intensified. The US government violated treaties with American Indians and responded to resistance with military force, eventually confining them to reservations. The Dawes Act (1887) broke up tribal land holdings through forced allotment. Many American Indians preserved their cultures and tribal identities despite assimilationist government policies.",
+          "keyTerms":["Dawes Act","reservation system","Ghost Dance","Wounded Knee","Battle of Little Bighorn","Exodusters","Homestead Act"],
+          "illustrativeExamples":["Dawes Act (1887) — broke up tribal land","Battle of Little Bighorn (1876)","Ghost Dance movement","Wounded Knee Massacre (1890)","Exodusters — Black migration to Kansas","Buffalo Bill's Wild West Show mythologized West"]
+        },
+        {
+          "id":"6.4","title":"The New South",
+          "theme":"NAT","themeLabel":"American & National Identity","themeColor":"#3B82F6",
+          "cedContent":"The Supreme Court decision in Plessy v. Ferguson (1896) upholding racial segregation (Jim Crow) helped mark the end of Reconstruction and the beginning of a long period of racial oppression. New South boosters promoted industrialization. Sharecropping and crop lien system kept freedmen in economic bondage. Convict leasing was a form of forced labor. Ida B. Wells documented lynching as a tool of racial terror.",
+          "keyTerms":["Plessy v. Ferguson","separate but equal","Jim Crow laws","Lost Cause mythology","New South","convict leasing","Ida B. Wells"],
+          "illustrativeExamples":["Plessy v. Ferguson (1896)","Ida B. Wells's anti-lynching campaign","Convict leasing system","Lost Cause mythology romanticized Confederacy","Henry Grady — New South boosterism","Comité des Citoyens challenged Plessy"]
+        },
+        {
+          "id":"6.5","title":"Technological Innovation",
+          "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
+          "cedContent":"Technological innovations — Edison's electrical grid (lightbulb), Bell's telephone, Bessemer steel process, Carnegie's steel mills, Rockefeller's oil refining — drove the Second Industrial Revolution. Standardization of railroad tracks, interchangeable parts, and mass production transformed the economy. Cities were transformed by electricity, streetcars, and steel-frame skyscrapers.",
+          "keyTerms":["Edison","Bell","Bessemer steel","Second Industrial Revolution","standardization","assembly line precursors","telegraph expansion"],
+          "illustrativeExamples":["Edison's lightbulb (1879) and electrical grid","Bell's telephone (1876)","Bessemer steel process","Carnegie Steel","Standard Oil refining","Brooklyn Bridge (1883)","First skyscrapers in Chicago"]
+        },
+        {
+          "id":"6.6","title":"The Rise of Industrial Capitalism",
+          "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
+          "cedContent":"Businesses made use of redesigned financial and management structures, advances in marketing, and a growing labor force. Many business leaders sought increased profits by consolidating corporations into large trusts and holding companies, which limited competition. Standard Oil (Rockefeller) used horizontal integration; Carnegie Steel used vertical integration. Social Darwinism and laissez-faire ideology justified inequality and resisted regulation.",
+          "keyTerms":["horizontal integration","vertical integration","trust","holding company","Social Darwinism","laissez-faire","monopoly","Gospel of Wealth"],
+          "illustrativeExamples":["Standard Oil horizontal integration","Carnegie Steel vertical integration","J.P. Morgan and banking consolidation","Herbert Spencer's Social Darwinism","Andrew Carnegie's Gospel of Wealth","Horatio Alger's rags-to-riches myth"]
+        },
+        {
+          "id":"6.7","title":"Labor in the Gilded Age",
+          "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
+          "cedContent":"Labor and management battled over wages and working conditions, with workers organizing local and national unions and/or using strikes and boycotts. The industrial workforce expanded and child labor increased. Knights of Labor (inclusive) declined after Haymarket Riot (1886). AFL under Gompers focused on craft unions and 'bread and butter' issues. Government and military consistently sided with management against strikers.",
+          "keyTerms":["Knights of Labor","AFL","Samuel Gompers","Haymarket Riot","Homestead Strike","Pullman Strike","eight-hour day","collective bargaining"],
+          "illustrativeExamples":["Great Railroad Strike (1877)","Haymarket Riot (1886) — destroyed Knights of Labor","Homestead Strike (1892)","Pullman Strike (1894) — Debs arrested","AFL — craft union federation","Eugene Debs and American Railway Union","Child labor in mills and mines"]
+        },
+        {
+          "id":"6.8","title":"Immigration & Migration in the Gilded Age",
+          "theme":"MIG","themeLabel":"Migration & Settlement","themeColor":"#F59E0B",
+          "cedContent":"As cities became areas of economic growth featuring new factories, they attracted immigrants from Asia and other parts of the world. 'New Immigration' from Southern and Eastern Europe (Italians, Poles, Russian Jews) transformed cities. Urban neighborhoods based on particular ethnicities provided new cultural opportunities. Chinese Exclusion Act (1882) was the first immigration restriction based on race.",
+          "keyTerms":["New Immigration","Chinese Exclusion Act","Ellis Island","Angel Island","nativism","ethnic enclaves","tenements"],
+          "illustrativeExamples":["Chinese Exclusion Act (1882)","Ellis Island (opened 1892)","Angel Island (Pacific gateway)","Chinatown in San Francisco","Kleindeutschland (Little Germany)","Jacob Riis: How the Other Half Lives (1890)"]
+        },
+        {
+          "id":"6.11","title":"Reform in the Gilded Age",
+          "theme":"SOC","themeLabel":"Social Structures","themeColor":"#A855F7",
+          "cedContent":"Many women sought greater equality with men, joining voluntary organizations, going to college, and promoting social and political reform. The Farmers' Alliance united rural communities against railroad discrimination and banking practices. The Populist (People's) Party demanded silver coinage, railroad regulation, graduated income tax, and direct election of senators. Bryan's Cross of Gold speech (1896) made silver the central issue.",
+          "keyTerms":["Farmers' Alliance","Populist Party","Omaha Platform","William Jennings Bryan","Cross of Gold","bimetallism","settlement houses","Hull House"],
+          "illustrativeExamples":["Farmers' Alliance","Omaha Platform (1892)","William Jennings Bryan's Cross of Gold (1896)","Populist Party (People's Party)","Hull House (Jane Addams, 1889)","National Grange — Granger Laws","Munn v. Illinois (1877)"]
+        },
+        {
+          "id":"6.12","title":"Controversies over the Role of Government",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"Foreign policymakers increasingly looked outside US borders to gain greater influence and control over markets and resources. Arguments for laissez-faire policies and competition dominated political discourse, with business leaders citing Social Darwinism. The Interstate Commerce Act (1887) was the first federal railroad regulation; the Sherman Antitrust Act (1890) was mostly ineffective initially. Civil service reform (Pendleton Act) replaced the spoils system.",
+          "keyTerms":["Interstate Commerce Act","Sherman Antitrust Act","Pendleton Civil Service Act","laissez-faire","Grover Cleveland","currency debates","gold standard"],
+          "illustrativeExamples":["Interstate Commerce Act (1887)","Sherman Antitrust Act (1890)","Pendleton Civil Service Act (1883)","Grover Cleveland vetoed farmer relief bill","Wabash v. Illinois (1886) — states can't regulate interstate RR","Alaska purchase (1867)"]
+        }
+      ]
+    },
+    {
+      "id": 7, "period": "Period 7", "years": "1890–1945",
+      "sub": "Imperialism, Progressivism, Depression & World Wars",
+      "weight": 13, "color": "#312E81", "examPct": "10–17%",
+      "timeline": [
+        {"y":1898,"e":"Spanish-American War"},{"y":1906,"e":"Pure Food & Drug Act"},
+        {"y":1913,"e":"16th & 17th Amendments"},{"y":1917,"e":"US enters WWI"},
+        {"y":1920,"e":"19th Amendment"},{"y":1929,"e":"Stock Market Crash"},
+        {"y":1933,"e":"New Deal begins"},{"y":1941,"e":"Pearl Harbor"},{"y":1945,"e":"WWII ends"}
+      ],
+      "topics": [
+        {
+          "id":"7.2","title":"Imperialism: Debates",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"Anti-imperialists cited principles of self-determination and invoked both racial theories and the US foreign policy tradition of non-intervention. Imperialists cited Social Darwinism, the 'White Man's Burden,' Mahan's sea power theory, and economic need for markets. The Roosevelt Corollary to the Monroe Doctrine asserted US right to intervene in Latin American nations to preserve stability and protect American interests.",
+          "keyTerms":["Alfred Thayer Mahan","sea power theory","Roosevelt Corollary","Monroe Doctrine","Anti-Imperialist League","Social Darwinism applied globally","White Man's Burden","Turner's Frontier Thesis"],
+          "illustrativeExamples":["Mahan's The Influence of Sea Power (1890)","Roosevelt Corollary (1904)","Anti-Imperialist League (Mark Twain, Carnegie)","Albert Beveridge's pro-expansion speeches","Guano Islands Act","US interventions in Latin America"]
+        },
+        {
+          "id":"7.3","title":"The Spanish-American War",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"Yellow journalism (Hearst, Pulitzer) inflamed public opinion after the USS Maine explosion. The Teller Amendment renounced annexation of Cuba. The Treaty of Paris gave the US Puerto Rico, Guam, and the Philippines. The Filipino-American War followed. The Platt Amendment gave the US the right to intervene in Cuba. The Insular Cases established that the Constitution could apply differently to territories.",
+          "keyTerms":["yellow journalism","USS Maine","Teller Amendment","Treaty of Paris (1898)","Filipino-American War","Platt Amendment","Insular Cases","Rough Riders"],
+          "illustrativeExamples":["USS Maine explosion (Feb 1898)","Yellow journalism: Hearst and Pulitzer","Rough Riders at San Juan Hill","Treaty of Paris (1898) — Philippines, Guam, Puerto Rico","Filipino-American War (1899–1902)","Platt Amendment (1901)","Insular Cases (1901)"]
+        },
+        {
+          "id":"7.4","title":"The Progressives",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"The Progressives were divided over many issues, including race — some supported segregation while others opposed it. On the national level, Progressives sought federal legislation to effectively regulate the economy and social welfare. Muckrakers exposed corporate abuses and government corruption. Political reforms included the 17th Amendment (direct election of senators), initiative, referendum, recall, and the direct primary. NAACP was founded (1909).",
+          "keyTerms":["muckrakers","Upton Sinclair","Ida Tarbell","Pure Food and Drug Act","17th Amendment","initiative/referendum/recall","NAACP","W.E.B. Du Bois","Booker T. Washington"],
+          "illustrativeExamples":["The Jungle (Sinclair, 1906)","Pure Food and Drug Act (1906)","Ida Tarbell on Standard Oil","Meat Inspection Act (1906)","17th Amendment (1913) — direct Senate election","NAACP founded (1909)","Triangle Shirtwaist Fire (1911)","16th Amendment — income tax (1913)"]
+        },
+        {
+          "id":"7.5","title":"World War I: Military and Diplomacy",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"Although the American Expeditionary Forces played a relatively limited role in combat, US entry helped tip the balance. Despite Wilson's deep involvement in postwar negotiations, the Senate refused to ratify the Treaty of Versailles or join the League of Nations. Germany's unrestricted submarine warfare, the Zimmermann Telegram, and economic ties to Britain pushed the US toward intervention.",
+          "keyTerms":["Zimmermann Telegram","unrestricted submarine warfare","Lusitania","14 Points","Treaty of Versailles","League of Nations","Senate rejection","isolationism"],
+          "illustrativeExamples":["Zimmermann Telegram (1917)","Lusitania sinking (1915)","Wilson's 14 Points (1918)","Treaty of Versailles — war guilt clause, reparations","Senate rejected League 55–39","Harlem Hellfighters — 369th Infantry","American Expeditionary Forces under Pershing"]
+        },
+        {
+          "id":"7.6","title":"World War I: Home Front",
+          "theme":"MIG","themeLabel":"Migration & Settlement","themeColor":"#F59E0B",
+          "cedContent":"Immigration from Europe peaked before World War I; during the war, nativist campaigns led to restriction quotas. The Great Migration of African Americans to Northern cities accelerated during WWI. Women entered the workforce in large numbers. The Espionage Act (1917) and Sedition Act (1918) suppressed dissent. The Red Scare (1919) targeted socialists, anarchists, and union organizers.",
+          "keyTerms":["Great Migration","Espionage Act","Sedition Act","Red Scare","Palmer Raids","nativism","19th Amendment","War Industries Board"],
+          "illustrativeExamples":["Great Migration — 600,000 Black Americans north during WWI","Espionage Act (1917) and Sedition Act (1918)","Red Scare and Palmer Raids (1919–20)","19th Amendment (1920) — women's suffrage","War Industries Board","Committee on Public Information (propaganda)","Eugene Debs imprisoned for anti-war speech"]
+        },
+        {
+          "id":"7.7","title":"1920s: Innovations in Communication & Technology",
+          "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
+          "cedContent":"New forms of mass media (radio, cinema) contributed to the spread of national culture. New technologies and manufacturing techniques (Ford's assembly line, Fordism) increased productivity and mass consumption. The spread of automobile culture transformed American society — suburbanization, road construction, new industries. Prosperity was unevenly distributed: farmers and some workers did not share in the boom. Stock market speculation on credit laid the foundation for the 1929 crash.",
+          "keyTerms":["Ford's assembly line","Fordism","mass production","consumerism","radio","cinema","advertising","installment buying","speculation"],
+          "illustrativeExamples":["Ford's Model T and assembly line","Radio broadcasting — KDKA (1920)","First talking movie — The Jazz Singer (1927)","Black Swan Records — Black music industry","Credit/installment buying boom","Suburbanization via automobile","Stock market speculation on margin"]
+        },
+        {
+          "id":"7.8","title":"1920s: Cultural and Political Controversies",
+          "theme":"ARC","themeLabel":"American & Regional Culture","themeColor":"#F97316",
+          "cedContent":"After WWI, nativist campaigns led to immigration restriction quotas. In the 1920s, cultural and political controversies emerged as Americans debated gender roles, modernism, science, and religion. The Harlem Renaissance saw an explosion of Black cultural production. 'Flappers' challenged traditional gender norms. Prohibition led to organized crime. The Scopes Trial pitted evolution against fundamentalism.",
+          "keyTerms":["Harlem Renaissance","flappers","Prohibition","Scopes Trial","KKK revival","Emergency Quota Act","National Origins Act","Lost Generation"],
+          "illustrativeExamples":["Harlem Renaissance — Hughes, Hurston, Ellington","Emergency Quota Act (1921) and National Origins Act (1924)","Prohibition (18th Amendment) and bootlegging","Scopes Trial (1925)","KKK revival — 4 million members by 1924","Ozawa v. US (1922) — Japanese not 'free white persons'","Langston Hughes, Zora Neale Hurston"]
+        },
+        {
+          "id":"7.9","title":"The Great Depression",
+          "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
+          "cedContent":"Episodes of credit and market instability, in particular the Great Depression, led to calls for greater government intervention in the economy. The stock market crash (1929), bank failures, Smoot-Hawley Tariff, and Hoover's inadequate response deepened the Depression. 25% unemployment, Dust Bowl, and Hoovervilles became defining images. Structural weaknesses: inequality, overproduction, easy credit, and international loan system.",
+          "keyTerms":["stock market crash","bank failures","Smoot-Hawley Tariff","Hoover's response","Dust Bowl","Hoovervilles","25% unemployment","Bonus Army"],
+          "illustrativeExamples":["Black Tuesday — Oct 29, 1929","Smoot-Hawley Tariff (1930) worsened global depression","Dust Bowl displaced Oklahoma farmers","Bonus Army march (1932)","Bank holiday — 9,000 banks failed","Hoover opposed direct federal relief"]
+        },
+        {
+          "id":"7.10","title":"The New Deal",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"Although the New Deal did not end the Depression, it left a legacy of reforms and regulatory agencies and fostered a long-term association between the Democratic Party and the federal government. Banking reform (FDIC, Glass-Steagall), relief (CCC, FERA), recovery (NRA), and structural reform (Social Security, Wagner Act legalizing unions, SEC) dramatically expanded federal power. The court-packing controversy revealed limits of executive power.",
+          "keyTerms":["FDIC","CCC","NRA","Social Security Act","Wagner Act","SEC","court-packing","New Deal coalition","Keynesian economics"],
+          "illustrativeExamples":["FDIC — bank deposit insurance","CCC — Civilian Conservation Corps","Social Security Act (1935)","Wagner Act (NLRA 1935) — legalized unions","Glass-Steagall Act (1933)","Court-packing plan (1937) — failed","Huey Long's 'Share Our Wealth'","Conservative Manifesto (1937)"]
+        },
+        {
+          "id":"7.12","title":"World War II: Mobilization",
+          "theme":"SOC","themeLabel":"Social Structures","themeColor":"#A855F7",
+          "cedContent":"Mobilization provided opportunities for women and minorities to improve their socioeconomic positions for the war's duration. FDR issued Executive Order 9066, ordering over 100,000 Japanese-Americans interned (upheld in Korematsu v. US). Migration to the United States from Mexico increased through the Bracero Program. Women entered the workforce in large numbers ('Rosie the Riveter'). The Double V campaign demanded democracy abroad and at home.",
+          "keyTerms":["Executive Order 9066","Japanese American internment","Korematsu v. US","Bracero Program","Double V campaign","Rosie the Riveter","war production"],
+          "illustrativeExamples":["Executive Order 9066 (1942)","Korematsu v. US (1944) — internment upheld","Bracero Program — Mexican guest workers","All-American Girls Professional Baseball League","'Rosie the Riveter' — women in industry","Double V campaign (Pittsburgh Courier)","Boeing B-17 production in Seattle"]
+        },
+        {
+          "id":"7.13","title":"World War II: Military",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"The United States and its allies achieved military victory through Allied cooperation, technological and scientific advances, and overwhelming industrial capacity. D-Day (June 6, 1944) opened a second front and started the liberation of France. Island-hopping in the Pacific advanced US forces toward Japan. The atomic bombs at Hiroshima and Nagasaki ended the war with Japan. The Yalta Conference shaped the postwar world.",
+          "keyTerms":["D-Day","island hopping","atomic bomb","Hiroshima","Nagasaki","Yalta Conference","Grand Alliance","Holocaust"],
+          "illustrativeExamples":["D-Day — Normandy invasion (June 6, 1944)","Battle of Midway (1942) — Pacific turning point","Hiroshima (Aug 6) and Nagasaki (Aug 9, 1945)","Yalta Conference (Feb 1945)","Holocaust — 6 million Jews killed","All-Nisei units (442nd Regimental Combat Team)","Nuremberg Trials established war crimes precedent"]
+        }
+      ]
+    },
+    {
+      "id": 8, "period": "Period 8", "years": "1945–1980",
+      "sub": "Cold War America & Social Movements",
+      "weight": 13, "color": "#155E75", "examPct": "10–17%",
+      "timeline": [
+        {"y":1947,"e":"Truman Doctrine"},{"y":1950,"e":"Korean War"},
+        {"y":1954,"e":"Brown v. Board"},{"y":1962,"e":"Cuban Missile Crisis"},
+        {"y":1964,"e":"Civil Rights Act"},{"y":1965,"e":"Voting Rights Act"},
+        {"y":1968,"e":"MLK & RFK assassinated"},{"y":1974,"e":"Nixon resigns"}
+      ],
+      "topics": [
+        {
+          "id":"8.2","title":"The Cold War from 1945 to 1980",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"As postwar tensions dissolved the wartime alliance, the US developed a strategy of containment to counter perceived Soviet expansionism. The US sought to contain communism through economic aid (Marshall Plan, Truman Doctrine), military alliances (NATO), and proxy wars (Korea, Vietnam). The Cold War fluctuated between periods of direct confrontation and mutual coexistence. Détente under Nixon-Kissinger and SALT I sought to reduce tensions.",
+          "keyTerms":["containment","Truman Doctrine","Marshall Plan","NATO","Korean War","domino theory","détente","SALT I","mutually assured destruction"],
+          "illustrativeExamples":["Truman Doctrine (1947)","Marshall Plan (1948)","Berlin Airlift (1948–49)","NATO established (1949)","Korean War (1950–53)","Cuban Missile Crisis (1962)","Détente under Nixon","SALT I (1972)"]
+        },
+        {
+          "id":"8.3","title":"The Red Scare",
+          "theme":"NAT","themeLabel":"American & National Identity","themeColor":"#3B82F6",
+          "cedContent":"Debates about exposing communists led to HUAC investigations, loyalty oaths, and the career of Senator Joseph McCarthy. The Alger Hiss case and Rosenbergs' execution heightened fears. McCarthy's televised Army-McCarthy Hearings (1954) led to his censure. The Hollywood Blacklist destroyed careers. Civil liberties vs. national security debate defined the era. Executive Order 9835 established loyalty oaths for federal employees.",
+          "keyTerms":["McCarthyism","HUAC","Hollywood Blacklist","Alger Hiss","Rosenbergs","Army-McCarthy Hearings","loyalty oaths","Second Red Scare"],
+          "illustrativeExamples":["HUAC — Hollywood Ten (1947)","Alger Hiss conviction (1950)","Rosenbergs executed (1953)","McCarthy's 'Enemies from Within' speech (1950)","Army-McCarthy Hearings (1954)","Hollywood Blacklist","Executive Order 9835 (1947) — loyalty oaths"]
+        },
+        {
+          "id":"8.4","title":"Economy after 1945",
+          "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
+          "cedContent":"Federal spending on defense and infrastructure boosted postwar prosperity. The GI Bill provided veterans with housing loans, college education, and business loans, creating the suburban middle class. Baby boom and suburban growth (Levittown) transformed American life. Consumer culture flourished. Eisenhower warned of the military-industrial complex's growing influence in his farewell address. The seeds of inequality beneath prosperity — racial restrictions in FHA loans, redlining.",
+          "keyTerms":["GI Bill","baby boom","suburbanization","Levittown","military-industrial complex","consumer culture","FHA loans","redlining"],
+          "illustrativeExamples":["GI Bill (1944) — college, housing for veterans","Levittown — mass-produced suburbs","Eisenhower's farewell: military-industrial complex (1961)","Interstate Highway Act (1956)","NASA founded (1958)","FHA and HOLC loans excluded Black Americans","Television transformed consumer culture"]
+        },
+        {
+          "id":"8.6","title":"Early Steps in the Civil Rights Movement",
+          "theme":"SOC","themeLabel":"Social Structures","themeColor":"#A855F7",
+          "cedContent":"The three branches of the federal government used measures including desegregation of the armed services (Executive Order 9981) and Brown v. Board of Education to advance the cause of civil rights. The NAACP used legal challenges (Thurgood Marshall). Montgomery Bus Boycott (1955–56) launched MLK's career. Massive resistance in the South (Citizens' Councils, KKK) fought desegregation. Little Rock crisis (1957) tested federal enforcement power.",
+          "keyTerms":["Brown v. Board","Thurgood Marshall","Montgomery Bus Boycott","MLK","Executive Order 9981","massive resistance","Little Rock","NAACP"],
+          "illustrativeExamples":["Executive Order 9981 (1948) — desegregated military","Brown v. Board of Education (1954)","Browder v. Gayle (1956) — Montgomery buses","Montgomery Bus Boycott (1955–56)","Little Rock Central High (1957)","Southern Manifesto (1956)","Emmett Till murder (1955)"]
+        },
+        {
+          "id":"8.8","title":"The Vietnam War",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"Postwar decolonization and powerful nationalist movements in Asia led both sides in the Cold War to seek influence over emerging nations. The Gulf of Tonkin Resolution (1964) gave LBJ broad war powers. Escalation created a quagmire; Tet Offensive (1968) undermined public support. My Lai massacre (1968) revealed the war's brutality. Nixon's Vietnamization and the Pentagon Papers (1971) revealed government deception. Americans debated appropriate presidential war-making power.",
+          "keyTerms":["Gulf of Tonkin Resolution","domino theory","Tet Offensive","My Lai massacre","Vietnamization","Pentagon Papers","War Powers Act","anti-war movement"],
+          "illustrativeExamples":["Gulf of Tonkin Resolution (1964)","Tet Offensive (Jan–Feb 1968) — shifted public opinion","My Lai Massacre (1968)","Pentagon Papers published (1971)","Nixon's Vietnamization","War Powers Act (1973)","Fall of Saigon (1975)","Kent State (1970)"]
+        },
+        {
+          "id":"8.9","title":"The Great Society",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"Liberal ideas found expression in Lyndon Johnson's Great Society, which attempted to use federal legislation and programs to solve national problems. Civil Rights Act (1964) banned discrimination in public accommodations and employment. Voting Rights Act (1965) eliminated literacy tests and other barriers. Medicare and Medicaid extended healthcare. The Immigration Act (1965) ended national origins quotas and transformed US demographics.",
+          "keyTerms":["Great Society","Civil Rights Act 1964","Voting Rights Act 1965","Medicare","Medicaid","Immigration Act 1965","War on Poverty","VISTA"],
+          "illustrativeExamples":["Civil Rights Act (1964) — Title II, Title VII","Voting Rights Act (1965)","Medicare and Medicaid (1965)","Immigration Act (1965) — ended national origins quotas","Elementary and Secondary Education Act (1965)","Head Start program","Michael Harrington's The Other America (1962)"]
+        },
+        {
+          "id":"8.10","title":"The African American Civil Rights Movement (1960s)",
+          "theme":"SOC","themeLabel":"Social Structures","themeColor":"#A855F7",
+          "cedContent":"Continuing resistance slowed desegregation, sparking social and political unrest across the nation. Sit-ins, Freedom Rides, and the Birmingham campaign (Bull Connor's violence) drew national attention. March on Washington (1963) and King's 'I Have a Dream.' Civil Rights Act (1964) and Voting Rights Act (1965) were major victories. Debates among civil rights activists: King's nonviolence vs. Malcolm X's Black nationalism vs. Black Power movement.",
+          "keyTerms":["sit-ins","Freedom Rides","Birmingham campaign","March on Washington","SNCC","SCLC","Malcolm X","Black Power","Black Panther Party"],
+          "illustrativeExamples":["Greensboro sit-ins (1960)","Freedom Rides (1961)","Birmingham campaign (1963)","March on Washington (1963) — 250,000 people","'I Have a Dream' speech","Selma to Montgomery marches (1965)","Black Panther Party (1966)","Stokely Carmichael's Black Power (1966)"]
+        },
+        {
+          "id":"8.11","title":"The Civil Rights Movement Expands",
+          "theme":"SOC","themeLabel":"Social Structures","themeColor":"#A855F7",
+          "cedContent":"Feminist and LGBTQ+ activists mobilized behind claims for legal, economic, and social equality. Feminists who participated in the counterculture rejected many social and political values of the 1950s. Latino movements (Chicano movement, UFW) and American Indian Movement (AIM) used the civil rights framework. The Stonewall Uprising (1969) launched the modern LGBTQ+ rights movement.",
+          "keyTerms":["NOW","feminist movement","Chicano movement","César Chávez","UFW","AIM","Wounded Knee","Stonewall","ERA","Title IX"],
+          "illustrativeExamples":["NOW founded (1966)","Equal Pay Act (1963)","Title IX (1972)","César Chávez and UFW grape boycott","AIM — Wounded Knee standoff (1973)","Stonewall Uprising (1969)","ERA passed Congress but not ratified","Betty Friedan's The Feminine Mystique (1963)"]
+        },
+        {
+          "id":"8.14","title":"Society in Transition",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"Public confidence and trust in government declined in the 1970s in the wake of Watergate, Vietnam, and economic stagflation. The 1970s saw growing clashes between conservatives and liberals over social and cultural issues, the power of the federal government, and economic policy. Stagflation (inflation + unemployment + energy crisis) shook confidence in Keynesian economics. The rise of New Right (Moral Majority, anti-ERA) set stage for Reagan.",
+          "keyTerms":["Watergate","stagflation","energy crisis","New Right","Moral Majority","ERA defeat","Nixon resignation","neo-conservatism"],
+          "illustrativeExamples":["Watergate break-in (1972)","Nixon resignation (August 1974)","OPEC oil embargo (1973)","Stagflation — high inflation + unemployment","Moral Majority founded (Falwell, 1979)","ERA defeated (3 states short of ratification)","Iran hostage crisis (1979)","American Conservative Union"]
+        }
+      ]
+    },
+    {
+      "id": 9, "period": "Period 9", "years": "1980–Present",
+      "sub": "Reagan Revolution, Globalization & Modern Challenges",
+      "weight": 5, "color": "#374151", "examPct": "4–6%",
+      "timeline": [
+        {"y":1980,"e":"Reagan elected"},{"y":1986,"e":"Tax Reform Act"},
+        {"y":1989,"e":"Berlin Wall falls"},{"y":1991,"e":"USSR collapse"},
+        {"y":2001,"e":"9/11 attacks"},{"y":2003,"e":"Iraq War"},
+        {"y":2008,"e":"Financial crisis"},{"y":2010,"e":"ACA passed"}
+      ],
+      "topics": [
+        {
+          "id":"9.2","title":"Reagan and Conservatism",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"Conservatives argued that liberal programs were counterproductive in fighting poverty and stimulating economic growth. Reaganomics: supply-side tax cuts, deregulation, reduced domestic spending, and increased defense spending. Policy debates continued over free-trade agreements, the scope of government, and social issues. Intense cultural debates continued over immigration, gender roles, and family values. The New Right coalition united fiscal conservatives, social conservatives, and defense hawks.",
+          "keyTerms":["Reaganomics","supply-side economics","trickle-down economics","deregulation","Moral Majority","Iran-Contra","Social Security cuts","defense buildup"],
+          "illustrativeExamples":["Economic Recovery Tax Act (1981) — largest tax cut","Iran-Contra Affair","Reagan's defense buildup — SDI (Star Wars)","Moral Majority and social conservatism","Welfare reform rhetoric","Deregulation of industries","Reagan Democrats shifted party coalitions"]
+        },
+        {
+          "id":"9.3","title":"The End of the Cold War",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"Increased US military spending, Reagan's diplomatic initiatives, and political changes and economic problems in Eastern Europe contributed to the end of the Cold War. Gorbachev's glasnost and perestroika reforms weakened Soviet control. Fall of the Berlin Wall (1989) and Soviet collapse (1991) left the US as sole superpower. The end of the Cold War led to new diplomatic relationships but also new US military interventions.",
+          "keyTerms":["glasnost","perestroika","Gorbachev","Berlin Wall","Soviet collapse","START I","Gulf War","sole superpower","NATO expansion"],
+          "illustrativeExamples":["Reagan's 'Evil Empire' speech (1983)","Strategic Defense Initiative (SDI/Star Wars)","Reykjavik Summit (1986)","Berlin Wall falls (Nov 9, 1989)","Soviet Union dissolved (Dec 1991)","Gulf War (1991) — Operation Desert Storm","START I arms reduction treaty (1991)","German reunification (1990)"]
+        },
+        {
+          "id":"9.4","title":"A Changing Economy",
+          "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
+          "cedContent":"Technological innovations in computing, digital mobile technology, and the internet transformed daily life, increased access to information, and affected the economy. Employment increased in service sectors and decreased in manufacturing (deindustrialization), and union membership declined. Real wages stagnated for the working and middle class amid growing economic inequality. Globalization through NAFTA (1994) and WTO accelerated these trends.",
+          "keyTerms":["deindustrialization","Rust Belt","service economy","NAFTA","globalization","internet revolution","income inequality","declining unions"],
+          "illustrativeExamples":["NAFTA (1994)","WTO established (1995)","Internet boom and dot-com bust (1990s–2000)","Apple, Microsoft — tech sector growth","Rust Belt deindustrialization","Decline in union membership","2008 financial crisis — worst since Depression","Gig economy emergence"]
+        },
+        {
+          "id":"9.5","title":"Migration and Immigration in the 1990s and 2000s",
+          "theme":"MIG","themeLabel":"Migration & Settlement","themeColor":"#F59E0B",
+          "cedContent":"International migration from Latin America and Asia increased dramatically. New immigrants affected US culture in many ways, sparking intense debates over assimilation, bilingual education, and immigration policy. The Immigration Reform and Control Act (1986) granted amnesty to some undocumented immigrants. Nativist resentment arose citing economic competition. Demographic transformation toward multiracial America accelerated.",
+          "keyTerms":["undocumented immigration","IRCA","DACA","Proposition 187","bilingual education","demographic transformation","Latin American immigration","Asian immigration"],
+          "illustrativeExamples":["IRCA (1986) — amnesty for 3 million undocumented","Proposition 187 (California, 1994)","Arizona SB 1070 (2010)","DACA established (2012)","Bilingual education debates","Southwest population growth from Latin American immigration","ESL education debates"]
+        },
+        {
+          "id":"9.6","title":"Challenges of the 21st Century",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"The War on Terror sought to improve security within the United States but raised questions about the protection of civil liberties. Conflicts in the Middle East and concerns about climate change led to debates about US energy policy. Despite challenges, the United States continued as the world's leading superpower. The 2008 financial crisis and the Obama administration's response shaped debates about government's economic role.",
+          "keyTerms":["9/11","War on Terror","PATRIOT Act","Iraq War","Afghanistan","climate change","2008 financial crisis","ACA","Obama"],
+          "illustrativeExamples":["9/11 attacks (Sept 11, 2001)","USA PATRIOT Act (2001)","Iraq War (2003) — WMDs not found","Hurricane Katrina (2005) exposed inequalities","2008 financial crisis — bank bailouts (TARP)","Obama elected (2008) — historic milestone","Affordable Care Act (2010)","Paris Climate Agreement debates"]
+        }
+      ]
+    }
+  ]
+}
