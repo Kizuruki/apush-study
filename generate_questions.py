@@ -103,19 +103,23 @@ def main():
 
     client = OpenAI(api_key=api_key)
 
-    with open(UNITS_FILE) as f:
+    with open(UNITS_FILE, encoding="utf-8") as f:
         units_data = json.load(f)
 
     fiveable_raw = {}
     heimler_raw  = {}
     if FIVEABLE_RAW.exists():
-        with open(FIVEABLE_RAW) as f: fiveable_raw = json.load(f)
+        with open(FIVEABLE_RAW, encoding="utf-8") as f:
+            fiveable_raw = json.load(f)
+
     if HEIMLER_RAW.exists():
-        with open(HEIMLER_RAW) as f: heimler_raw  = json.load(f)
+        with open(HEIMLER_RAW, encoding="utf-8") as f:
+            heimler_raw = json.load(f)
 
     existing = {}
     if args.resume and OUTPUT.exists():
-        with open(OUTPUT) as f: existing = json.load(f)
+        with open(OUTPUT, encoding="utf-8") as f:
+            existing = json.load(f)
 
     bank = dict(existing)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
