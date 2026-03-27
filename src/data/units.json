@@ -11,6 +11,13 @@
       ],
       "topics": [
         {
+          "id":"1.1","title":"Contextualizing Period 1",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"Before European contact, the Americas were home to diverse and complex societies. European exploration was driven by economic competition, religious zeal, and technological advances. The meeting of Native American, European, and African peoples in the Americas after 1492 would transform all three worlds.",
+          "keyTerms":["pre-contact Americas","European exploration","Columbian Exchange","cultural encounter","Atlantic World"],
+          "illustrativeExamples":["Diverse pre-contact Native civilizations","Portuguese and Spanish rivalry","Trans-Atlantic connections"]
+        },
+        {
           "id":"1.2","title":"Native American Societies Before European Contact",
           "theme":"GEO","themeLabel":"Geography & Environment","themeColor":"#10B981",
           "cedContent":"The spread of maize cultivation from present-day Mexico northward supported economic development, settlement, advanced irrigation, and social diversification. Societies in the Great Basin and Plains developed mobile lifestyles in response to aridity. In the Northeast, Mississippi Valley, and Atlantic seaboard, societies developed mixed agricultural and hunter-gatherer economies favoring permanent villages. Northwest and California societies supported themselves by hunting and gathering, with some developing settled communities from ocean resources.",
@@ -57,6 +64,13 @@
         {"y":1692,"e":"Salem Witch Trials"},{"y":1739,"e":"Stono Rebellion"},{"y":1754,"e":"F&I War begins"}
       ],
       "topics": [
+        {
+          "id":"2.1","title":"Contextualizing Period 2",
+          "theme":"MIG","themeLabel":"Migration & Settlement","themeColor":"#F59E0B",
+          "cedContent":"European colonization of North America led to the development of distinct colonial societies shaped by geography, religion, and labor systems. Interactions between Europeans, Native Americans, and Africans created new and complex social hierarchies.",
+          "keyTerms":["colonial settlement","labor systems","regional differences","slavery","European rivalry"],
+          "illustrativeExamples":["English, French, Dutch, Spanish colonial patterns","Emergence of racial slavery","Regional colonial economies"]
+        },
         {
           "id":"2.2","title":"European Colonization",
           "theme":"MIG","themeLabel":"Migration & Settlement","themeColor":"#F59E0B",
@@ -112,6 +126,13 @@
         {"y":1787,"e":"Constitution"},{"y":1798,"e":"Alien & Sedition Acts"}
       ],
       "topics": [
+        {
+          "id":"3.1","title":"Contextualizing Period 3",
+          "theme":"NAT","themeLabel":"American & National Identity","themeColor":"#3B82F6",
+          "cedContent":"Tensions between Britain and the American colonies over taxation and representation led to revolution and the creation of a new nation. Enlightenment ideals of natural rights and popular sovereignty shaped the founding documents and ongoing debates about the nature of American democracy.",
+          "keyTerms":["colonial grievances","Enlightenment","natural rights","revolution","republican government"],
+          "illustrativeExamples":["British imperial policies post-1763","Enlightenment influence on founders","Creation of constitutional government"]
+        },
         {
           "id":"3.2","title":"The Seven Years' War (French and Indian War)",
           "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
@@ -189,6 +210,13 @@
       ],
       "topics": [
         {
+          "id":"4.1","title":"Contextualizing Period 4",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"The early republic faced challenges of national unity, territorial expansion, and growing sectional tensions over slavery. The Market Revolution transformed the economy and society while democratic reforms expanded political participation for white men but excluded others.",
+          "keyTerms":["early republic","Market Revolution","sectionalism","democracy","westward expansion"],
+          "illustrativeExamples":["Jeffersonian vs. Hamiltonian visions","Expansion of white male suffrage","Growing North-South divide over slavery"]
+        },
+        {
           "id":"4.2","title":"The Rise of Political Parties & Era of Jefferson",
           "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
           "cedContent":"Supreme Court decisions (Marbury v. Madison, McCulloch v. Maryland) established the primacy of the judiciary and asserted implied powers. Following the Louisiana Purchase, the US government sought influence and control over North America through military, diplomatic, and economic means. The 'Revolution of 1800' was a peaceful transfer of power. The Embargo Act and War of 1812 reflected challenges of maintaining neutrality.",
@@ -264,6 +292,13 @@
         {"y":1863,"e":"Emancipation Proclamation"},{"y":1865,"e":"13th Amendment"},{"y":1877,"e":"Compromise of 1877"}
       ],
       "topics": [
+        {
+          "id":"5.1","title":"Contextualizing Period 5",
+          "theme":"NAT","themeLabel":"American & National Identity","themeColor":"#3B82F6",
+          "cedContent":"Territorial expansion intensified debates over slavery's extension, ultimately fracturing the political system and leading to Civil War. Reconstruction attempted to redefine American democracy by extending citizenship and rights to formerly enslaved people, but ultimately fell short.",
+          "keyTerms":["Manifest Destiny","slavery expansion","sectional crisis","Civil War","Reconstruction"],
+          "illustrativeExamples":["Mexican Cession reignited slavery debate","Collapse of compromise","Amendments 13, 14, 15"]
+        },
         {
           "id":"5.2","title":"Manifest Destiny",
           "theme":"GEO","themeLabel":"Geography & Environment","themeColor":"#10B981",
@@ -341,6 +376,13 @@
       ],
       "topics": [
         {
+          "id":"6.1","title":"Contextualizing Period 6",
+          "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
+          "cedContent":"Rapid industrialization, technological innovation, and the rise of big business transformed the American economy after the Civil War. Massive immigration, urbanization, and labor conflict defined the Gilded Age, while farmers and workers sought political solutions to economic inequality.",
+          "keyTerms":["industrialization","Gilded Age","immigration","urbanization","labor movement"],
+          "illustrativeExamples":["Second Industrial Revolution","Rise of monopolies","Populist and labor reform movements"]
+        },
+        {
           "id":"6.3","title":"Westward Expansion: Social & Cultural Development",
           "theme":"MIG","themeLabel":"Migration & Settlement","themeColor":"#F59E0B",
           "cedContent":"As migrant populations increased and the American bison population was decimated, competition for land and resources in the West intensified. The US government violated treaties with American Indians and responded to resistance with military force, eventually confining them to reservations. The Dawes Act (1887) broke up tribal land holdings through forced allotment. Many American Indians preserved their cultures and tribal identities despite assimilationist government policies.",
@@ -409,6 +451,13 @@
         {"y":1933,"e":"New Deal begins"},{"y":1941,"e":"Pearl Harbor"},{"y":1945,"e":"WWII ends"}
       ],
       "topics": [
+        {
+          "id":"7.1","title":"Contextualizing Period 7",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"The United States emerged as a world power through imperialism, participation in two world wars, and economic dominance. Domestically, Progressive reform, the Great Depression, and the New Deal redefined the relationship between the federal government and American society.",
+          "keyTerms":["imperialism","Progressive Era","World Wars","New Deal","federal power expansion"],
+          "illustrativeExamples":["Spanish-American War as turning point","US entry into WWI and WWII","Expansion of federal government role"]
+        },
         {
           "id":"7.2","title":"Imperialism: Debates",
           "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
@@ -500,6 +549,13 @@
       ],
       "topics": [
         {
+          "id":"8.1","title":"Contextualizing Period 8",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"The Cold War shaped American foreign and domestic policy for decades, while postwar prosperity and social movements transformed American society. Civil rights activism, the Great Society, and the counterculture challenged existing social hierarchies and redefined American identity.",
+          "keyTerms":["Cold War","containment","civil rights","Great Society","social movements"],
+          "illustrativeExamples":["US-Soviet rivalry","Civil rights legislation","Vietnam War's domestic impact"]
+        },
+        {
           "id":"8.2","title":"The Cold War from 1945 to 1980",
           "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
           "cedContent":"As postwar tensions dissolved the wartime alliance, the US developed a strategy of containment to counter perceived Soviet expansionism. The US sought to contain communism through economic aid (Marshall Plan, Truman Doctrine), military alliances (NATO), and proxy wars (Korea, Vietnam). The Cold War fluctuated between periods of direct confrontation and mutual coexistence. Détente under Nixon-Kissinger and SALT I sought to reduce tensions.",
@@ -575,6 +631,13 @@
         {"y":2008,"e":"Financial crisis"},{"y":2010,"e":"ACA passed"}
       ],
       "topics": [
+        {
+          "id":"9.1","title":"Contextualizing Period 9",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"The Reagan Revolution marked a conservative shift in American politics emphasizing limited government, free markets, and traditional values. The end of the Cold War left the US as sole superpower, while globalization, technological change, and demographic shifts created new economic and social challenges.",
+          "keyTerms":["conservatism","Reagan Revolution","post-Cold War","globalization","technology"],
+          "illustrativeExamples":["Rise of the New Right","US as sole superpower","Internet and economic transformation"]
+        }
         {
           "id":"9.2","title":"Reagan and Conservatism",
           "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
