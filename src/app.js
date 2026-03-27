@@ -10,6 +10,7 @@ const state = {
   selectedUnit: null,
   selectedTopic: null,
   question: null,
+  unitOverviews: {},
   loading: false,
   error: null,
   selected: null,
@@ -20,6 +21,13 @@ const state = {
   missed: load('apush_missed') || [],
   essayPrompts: null,
   showNotes: true,
+  unitOverviews: {},
+  fiveableRaw: {},
+  heimlerRaw: {},
+  questionBank: {},
+  questionHistory: load('apush_q_history') || [],
+  historyFilter: 'all',
+  topicView: 'drill',  // 'drill' | 'notes'
 };
 
 // ─── Helpers ──────────────────────────────────────────────────────────────
@@ -153,36 +161,82 @@ async function callClaude(prompt, maxTokens = 1100) {
 }
 
 // ─── Question generator ────────────────────────────────────────────────────
-async function generateQuestion(unit, topic) {
-  const notes = state.heimlerNotes[topic.id] || state.fiveableNotes[topic.id];
-  const notesBlock = notes
-    ? `STUDY NOTES FOR THIS TOPIC:\n${notes.slice(0, 800)}`
-    : `CED CONTENT:\n${topic.cedContent}`;
+function chunkNotes(text, size = 700) {
+  const paras = text.split('\n').map(p => p.trim()).filter(p => p.length > 40);
+  if (!paras.length) return text.slice(0, size);
+  const chunks = [];
+  let cur = [], len = 0;
+  for (const p of paras) {
+    cur.push(p); len += p.length;
+    if (len >= size) { chunks.push(cur.join('\n')); cur = []; len = 0; }
+  }
+  if (cur.length) chunks.push(cur.join('\n'));
+  if (!chunks.length) return text.slice(0, size);
+  return chunks[Math.floor(Math.random() * chunks.length)];
+}
 
-  const prompt = `You are an expert AP US History exam writer. Create ONE stimulus-based or evidence-based MCQ.
+async function generateQuestion(unit, topic) {
+  // 1. Try pre-generated bank first
+  const bankPool = state.questionBank[topic.id];
+  const historyIds = new Set(
+    state.questionHistory
+      .filter(h => h.topicId === topic.id)
+      .map(h => h.question?.question?.slice(0, 60))
+  );
+  if (bankPool?.length) {
+    const unseen = bankPool.filter(q => !historyIds.has(q.question?.slice(0, 60)));
+    const pool = unseen.length ? unseen : bankPool;
+    return pool[Math.floor(Math.random() * pool.length)];
+  }
+
+  // 2. Fall back to live API with raw notes + random chunk
+  const key = getApiKey();
+  if (!key) throw new Error('No API key');
+
+  const rawNotes = state.heimlerRaw[topic.id] || state.fiveableRaw[topic.id];
+  const chunk = rawNotes
+    ? chunkNotes(rawNotes, 700)
+    : topic.cedContent;
+
+  const prompt = `You are an expert AP US History exam writer.
 
 UNIT: ${unit.period} (${unit.years}) — ${unit.sub}
 TOPIC: ${topic.id} "${topic.title}"
 AP THEME: ${topic.themeLabel}
-${notesBlock}
-KEY TERMS: ${topic.keyTerms?.join(', ')}
-ILLUSTRATIVE EXAMPLES: ${topic.illustrativeExamples?.join('; ')}
 
-CRITICAL RULE — ALL 4 CHOICES MUST BE HISTORICALLY ACCURATE:
-Wrong answer choices describe real historical facts or events. They are wrong NOT because the information is false, but because they address a different cause, effect, or connection than what THIS question asks. A student who knows only isolated facts (not connections) would find wrong choices tempting because they're all true.
+SOURCE NOTES (base your question ONLY on this content):
+${chunk}
 
-QUESTION TYPES — pick one:
-- Causation: "What was a primary cause of X?"
-- Effect: "What was a most significant result of X?"
-- Connection: "How did A most directly contribute to B?"
-- Significance: "What does X most clearly reflect about [broader trend]?"
-- Context: "Which development best explains why X occurred?"
+KEY TERMS FOR CONTEXT: ${topic.keyTerms?.join(', ')}
 
-Return ONLY valid JSON (no markdown, no code fences):
-{"question":"2-3 sentences of historical context then the specific question","choices":[{"letter":"A","text":"historically accurate — 1 sentence"},{"letter":"B","text":"historically accurate — 1 sentence"},{"letter":"C","text":"historically accurate — 1 sentence"},{"letter":"D","text":"historically accurate — 1 sentence"}],"correct":"C","skill":"Causation","explanation":"Why the correct answer is right AND for each wrong choice explain: (a) what makes it historically true and (b) why it doesn't answer THIS specific question.","theme_connection":"1 sentence connecting to ${topic.themeLabel}","essay_angle":"One AP essay angle this relates to (LEQ/SAQ/DBQ topic)"}`;
+Generate exactly 3 AP-style MCQs based on the source notes above.
 
-  const raw = await callClaude(prompt);
-  return JSON.parse(raw.replace(/```json\n?|\n?```/g, '').trim());
+RULES:
+- ALL 4 choices must be historically accurate
+- Wrong choices are wrong because they answer a DIFFERENT question, NOT because they're false
+- Vary question types: Causation / Effect / Connection / Significance / Context
+- Each question covers a DIFFERENT aspect of the notes
+
+Return ONLY valid JSON, no markdown:
+{"questions":[{"question":"...","choices":[{"letter":"A","text":"..."},{"letter":"B","text":"..."},{"letter":"C","text":"..."},{"letter":"D","text":"..."}],"correct":"C","skill":"Causation","explanation":"...","theme_connection":"...","essay_angle":"..."}]}`;
+
+  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${key}` },
+    body: JSON.stringify({ model: 'gpt-4o-mini', max_tokens: 2000, temperature: 0.7,
+      messages: [{ role: 'user', content: prompt }] })
+  });
+  const data = await res.json();
+  if (data.error) throw new Error(data.error.message);
+  const text = data.choices[0].message.content.replace(/```json\n?|\n?```/g, '').trim();
+  const parsed = JSON.parse(text);
+  const questions = parsed.questions;
+
+  // Cache newly generated questions into the bank for this session
+  if (!state.questionBank[topic.id]) state.questionBank[topic.id] = [];
+  state.questionBank[topic.id].push(...questions);
+
+  return questions[Math.floor(Math.random() * questions.length)];
 }
 
 // ─── Essay generator ───────────────────────────────────────────────────────
@@ -267,6 +321,7 @@ function renderHome() {
         <p class="home-desc">CED-aligned questions where every answer choice is historically accurate</p>
         <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
           <button onclick="startFullDrill()" class="btn" style="background:#A8762A;color:white;font-size:14px;padding:10px 22px">⚡ Weighted Full Review</button>
+          <button onclick="goHistory()" class="btn" style="background:#374151;color:white;font-size:14px;padding:10px 22px">📚 History</button>
           ${missedPill}${sessionPill}
         </div>
       </div>
@@ -306,7 +361,15 @@ function renderUnit() {
         <div style="font-size:12px;color:var(--muted);margin-top:3px;line-height:1.5">${esc(topic.cedContent?.slice(0,110))}…</div>
         ${progressBar}
       </div>
-      <div class="topic-drill" style="background:${u.color}">Drill →</div>
+      return `<div class="card topic-row" style="--active-color:${u.color}" onclick="goTopic('${topic.id}','drill')">
+        <div style="flex:1">
+          ...existing content...
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
+          <div class="topic-drill" style="background:${u.color}" onclick="event.stopPropagation();goTopic('${topic.id}','drill')">Drill →</div>
+          <div class="topic-drill" style="background:#6D28D9;font-size:11px" onclick="event.stopPropagation();goTopic('${topic.id}','notes')">Notes 📖</div>
+        </div>
+      </div>`;
     </div>`;
   }).join('');
 
@@ -320,12 +383,28 @@ function renderUnit() {
     <div class="unit-timeline-wrap">
       <div class="unit-timeline-label">Period Timeline</div>
       ${renderTimeline(u.timeline, u.color)}
+      const overviewKey = `overview_${u.id}`;
+      const overviewText = state.unitOverviews?.[overviewKey];
+      const overviewHtml = overviewText ? `
+        <div style="background:#F0F7FF;border:1px solid #BFDBFE;border-radius:10px;padding:14px 16px;margin-bottom:14px">
+          <div style="font-size:10px;letter-spacing:2px;font-weight:700;text-transform:uppercase;color:#1D4ED8;margin-bottom:6px">
+            📋 Unit Overview
+          </div>
+          <div id="overview-body-${u.id}" style="font-size:13px;color:#1E3A5F;line-height:1.75;overflow:hidden;max-height:80px;transition:max-height 0.3s ease">
+            ${esc(overviewText)}
+          </div>
+          <button onclick="toggleOverview(${u.id})" id="overview-toggle-${u.id}"
+            style="margin-top:8px;font-size:11px;color:#1D4ED8;background:none;border:none;cursor:pointer;font-weight:600;padding:0">
+            Show more ▾
+          </button>
+        </div>` : '';
     </div>
     <div class="unit-content">
       <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
         <button onclick="goEssay()" class="btn" style="background:#6D28D9;color:white;font-size:13px">📝 Generate Essay Prompts</button>
         <button onclick="goMissed()" class="btn" style="background:#EF4444;color:white;font-size:13px">🔄 Missed (${state.missed.length})</button>
       </div>
+      ${overviewHtml}
       <div class="hint-box">Click any topic to drill it. All 4 choices are historically accurate — wrong answers describe real events but the wrong connection.</div>
       <div class="topic-list">${topicRows}</div>
     </div>`;
@@ -358,6 +437,78 @@ function renderNotesSummary(unit, topic) {
 
 function renderQuiz() {
   const u = state.selectedUnit, topic = state.selectedTopic;
+
+  // Tab bar shown in both modes
+  const tabBar = `
+    <div style="display:flex;gap:0;margin-bottom:16px;border:1px solid var(--border);border-radius:8px;overflow:hidden">
+      <button onclick="goTopic('${topic.id}','drill')"
+        style="flex:1;padding:9px;border:none;cursor:pointer;font-weight:600;font-size:13px;
+               background:${state.topicView==='drill'?u.color:'white'};
+               color:${state.topicView==='drill'?'white':'var(--navy)'}">
+        ⚡ Drill
+      </button>
+      <button onclick="goTopic('${topic.id}','notes')"
+        style="flex:1;padding:9px;border:none;cursor:pointer;font-weight:600;font-size:13px;
+               background:${state.topicView==='notes'?u.color:'white'};
+               color:${state.topicView==='notes'?'white':'var(--navy)'}">
+        📖 Notes
+      </button>
+    </div>`;
+
+  if (state.topicView === 'notes') {
+    const heimlerRaw  = state.heimlerRaw[topic.id];
+    const fiveableRaw = state.fiveableRaw[topic.id];
+    const heimlerSum  = state.heimlerNotes[topic.id];
+    const fiveableSum = state.fiveableNotes[topic.id];
+
+    const rawSection = (label, icon, text, color) => text ? `
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:12px">
+        <div style="font-size:10px;letter-spacing:2px;font-weight:700;text-transform:uppercase;color:${color};margin-bottom:10px">
+          ${icon} ${label}
+        </div>
+        <div style="font-size:13px;line-height:1.8;color:var(--navy);white-space:pre-wrap;font-family:'DM Mono',monospace">${esc(text)}</div>
+      </div>` : '';
+
+    const notesContent =
+      rawSection('Heimler Notes — Original', '📘', heimlerRaw, u.color) ||
+      rawSection('Heimler Study Guide — Summary', '📘', heimlerSum, u.color);
+
+    const fiveableContent =
+      rawSection('Fiveable Study Guide — Original Scraped', '📗', fiveableRaw, '#059669') ||
+      rawSection('Fiveable Study Guide — Summary', '📗', fiveableSum, '#059669');
+
+    const cedContent = `
+      <div style="background:#FFF8ED;border:1px solid #FDE68A;border-radius:10px;padding:16px;margin-bottom:12px">
+        <div style="font-size:10px;letter-spacing:2px;font-weight:700;text-transform:uppercase;color:#92400E;margin-bottom:8px">
+          📋 CED Official Content
+        </div>
+        <div style="font-size:13px;line-height:1.8;color:var(--navy)">${esc(topic.cedContent)}</div>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border)">
+          <div style="font-size:10px;color:var(--muted);font-weight:700;text-transform:uppercase;margin-bottom:6px">Key Terms</div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">${(topic.keyTerms||[]).map(t=>`<span class="pill" style="background:${topic.themeColor}22;color:${topic.themeColor}">${esc(t)}</span>`).join('')}</div>
+        </div>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border)">
+          <div style="font-size:10px;color:var(--muted);font-weight:700;text-transform:uppercase;margin-bottom:6px">Illustrative Examples</div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">${(topic.illustrativeExamples||[]).map(e=>`<span class="pill" style="background:#F5F3FF;color:#5B21B6;font-size:10px">${esc(e)}</span>`).join('')}</div>
+        </div>
+      </div>`;
+
+    return `
+      <div class="quiz-header" style="background:${u.color}">
+        <button onclick="goUnit(${u.id})" class="btn btn-ghost" style="font-size:12px;padding:5px 12px">← Back</button>
+        <div class="quiz-header-center">
+          <div style="font-size:10px;opacity:0.7;letter-spacing:1px">${u.period} · Topic ${topic.id}</div>
+          <div style="font-weight:600;font-size:13px">${esc(topic.title)}</div>
+        </div>
+        <div style="width:50px"></div>
+      </div>
+      <div class="quiz-body">
+        ${tabBar}
+        ${notesContent || ''}
+        ${fiveableContent || ''}
+        ${cedContent}
+      </div>`;
+  }
   const { question: q, loading, error, selected, revealed, sessionScore, showNotes } = state;
 
   const scorePanel = sessionScore.t > 0
@@ -529,6 +680,7 @@ function render() {
     case 'quiz':   app.innerHTML = renderQuiz(); break;
     case 'essay':  app.innerHTML = renderEssay(); break;
     case 'missed': app.innerHTML = renderMissed(); break;
+    case 'history': app.innerHTML = renderHistory(); break;
     default: app.innerHTML = renderHome();
   }
 }
@@ -541,16 +693,29 @@ window.goUnit = (id) => {
   state.view = 'unit';
   render();
 };
-window.goTopic = async (topicId) => {
+window.toggleOverview = (id) => {
+  const body = document.getElementById(`overview-body-${id}`);
+  const btn = document.getElementById(`overview-toggle-${id}`);
+  if (!body || !btn) return;
+  const collapsed = body.style.maxHeight === '80px';
+  body.style.maxHeight = collapsed ? '1000px' : '80px';
+  btn.textContent = collapsed ? 'Show less ▴' : 'Show more ▾';
+};
+window.toggleOverview = window.toggleOverview;
+window.goTopic = async (topicId, mode = 'drill') => {
   const topic = state.selectedUnit?.topics.find(t => t.id === topicId);
   if (!topic) return;
   state.selectedTopic = topic;
+  state.topicView = mode;
   state.view = 'quiz';
   state.question = null;
   state.selected = null;
   state.revealed = false;
   state.error = null;
   state.showNotes = true;
+
+  if (mode === 'notes') { render(); return; }
+
   state.loading = true;
   render();
   try {
@@ -558,7 +723,8 @@ window.goTopic = async (topicId) => {
     state.loading = false;
   } catch(e) {
     state.loading = false;
-    state.error = e.message.includes('No API key') ? 'Please set your API key (gear icon)' : e.message;
+    state.error = e.message.includes('No API key')
+      ? 'Please set your API key (gear icon)' : e.message;
   }
   render();
 };
@@ -582,7 +748,7 @@ window.loadEssay = async () => {
   render();
 };
 window.goMissed = () => { state.view = 'missed'; render(); };
-
+window.goHistory = () => { state.view = 'history'; state.historyFilter = 'all'; render(); };
 window.chooseAnswer = (letter) => {
   if (state.revealed || !state.question) return;
   state.selected = letter;
@@ -592,6 +758,22 @@ window.chooseAnswer = (letter) => {
   state.sessionScore.t += 1;
   updateProgress(state.selectedUnit.id, state.selectedTopic.id, correct);
   if (!correct) addMissed(state.selectedUnit, state.selectedTopic, state.question);
+
+  // Save to history
+  const histEntry = {
+    topicId: state.selectedTopic.id,
+    unitId: state.selectedUnit.id,
+    topicTitle: state.selectedTopic.title,
+    unitPeriod: state.selectedUnit.period,
+    unitColor: state.selectedUnit.color,
+    question: state.question,
+    selected: letter,
+    correct,
+    timestamp: Date.now(),
+  };
+  state.questionHistory = [histEntry, ...state.questionHistory].slice(0, 200);
+  save('apush_q_history', state.questionHistory);
+
   render();
 };
 
@@ -640,9 +822,29 @@ document.body.appendChild(settingsBtn);
 async function init() {
   // Load units data
   try {
+    const r = await fetch('src/data/fiveable_raw.json');
+    if (r.ok) state.fiveableRaw = await r.json();
+  } catch {}
+  try {
+    const r = await fetch('src/data/heimler_raw.json');
+    if (r.ok) state.heimlerRaw = await r.json();
+  } catch {}
+  try {
+    const r = await fetch('src/data/question_bank.json');
+    if (r.ok) state.questionBank = await r.json();
+  } catch {}
+  try {
+    const r = await fetch('src/data/unit_overviews.json');
+    if (r.ok) state.unitOverviews = await r.json();
+  } catch {}
+  try {
     const res = await fetch('src/data/units.json');
     const data = await res.json();
     state.units = data.units;
+  try {
+    const r = await fetch('src/data/unit_overviews.json');
+    if (r.ok) state.unitOverviews = await r.json();
+  } catch {}
   } catch(e) {
     document.getElementById('app').innerHTML = `<div style="padding:40px;text-align:center;color:red">
       <h2>Failed to load units.json</h2><p>${e.message}</p>
@@ -667,6 +869,71 @@ async function init() {
   }
 
   render();
+}
+
+function renderHistory() {
+  const { questionHistory } = state;
+  if (!questionHistory.length) return `
+    <div style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center">
+      <div style="font-size:40px;margin-bottom:16px">📭</div>
+      <h2 style="font-family:'Lora',serif;color:var(--navy);margin-bottom:8px">No history yet</h2>
+      <p style="color:var(--muted);margin-bottom:20px">Start drilling to build your question history.</p>
+      <button onclick="goHome()" class="btn btn-primary">← Back to Home</button>
+    </div>`;
+
+  const wrongOnly = state.historyFilter === 'wrong';
+  const filtered = wrongOnly ? questionHistory.filter(h => !h.correct) : questionHistory;
+
+  const items = filtered.slice(0, 100).map(h => {
+    const date = new Date(h.timestamp).toLocaleDateString();
+    const correctChoice = h.question?.choices?.find(c => c.letter === h.question?.correct);
+    const selectedChoice = h.question?.choices?.find(c => c.letter === h.selected);
+    return `
+      <div style="background:var(--surface);border:1px solid ${h.correct?'var(--ok-border)':'var(--err-border)'};
+                  border-left:5px solid ${h.correct?'var(--ok-border)':'var(--err-border)'};
+                  border-radius:8px;padding:14px 16px;margin-bottom:10px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <span style="font-size:10px;color:${h.unitColor};font-weight:700;text-transform:uppercase;letter-spacing:1px">
+            ${esc(h.unitPeriod)} — Topic ${h.topicId}: ${esc(h.topicTitle)}
+          </span>
+          <span style="font-size:11px;color:var(--muted)">${date}</span>
+        </div>
+        <p style="font-family:'Lora',serif;font-size:13px;color:var(--navy);line-height:1.6;margin-bottom:8px">
+          ${esc((h.question?.question||'').slice(0,180))}…
+        </p>
+        <div style="font-size:12px;color:${h.correct?'var(--ok)':'var(--err)'}">
+          ${h.correct ? '✓ Correct' : `✗ You chose ${h.selected}: "${esc(selectedChoice?.text?.slice(0,60))}…"`}
+        </div>
+        ${!h.correct && correctChoice ? `
+          <div style="font-size:12px;color:var(--ok);margin-top:3px">
+            ✓ Answer was ${h.question.correct}: "${esc(correctChoice.text.slice(0,70))}…"
+          </div>` : ''}
+      </div>`;
+  }).join('');
+
+  return `
+    <div style="background:var(--navy);color:white;padding:14px 22px">
+      <button onclick="goHome()" class="btn btn-ghost" style="margin-bottom:10px;font-size:12px">← Home</button>
+      <h2 style="font-family:'Lora',serif;font-size:22px;margin:0">📚 Question History</h2>
+      <p style="margin:4px 0 0;opacity:0.7;font-size:13px">${questionHistory.length} questions answered</p>
+    </div>
+    <div style="max-width:720px;margin:0 auto;padding:18px 16px">
+      <div style="display:flex;gap:8px;margin-bottom:16px">
+        <button onclick="state.historyFilter='all';render()" class="btn"
+          style="background:${!wrongOnly?'var(--navy)':'white'};color:${!wrongOnly?'white':'var(--navy)'};border:2px solid var(--navy)">
+          All (${questionHistory.length})
+        </button>
+        <button onclick="state.historyFilter='wrong';render()" class="btn"
+          style="background:${wrongOnly?'#DC2626':'white'};color:${wrongOnly?'white':'#DC2626'};border:2px solid #DC2626">
+          Wrong only (${questionHistory.filter(h=>!h.correct).length})
+        </button>
+        <button onclick="if(confirm('Clear history?')){state.questionHistory=[];save('apush_q_history',[]);render()}" 
+          class="btn btn-outline" style="color:var(--muted);border-color:var(--muted);font-size:12px;margin-left:auto">
+          Clear
+        </button>
+      </div>
+      ${items || '<p style="color:var(--muted);text-align:center;padding:32px">No questions match this filter.</p>'}
+    </div>`;
 }
 
 init();
