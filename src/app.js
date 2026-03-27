@@ -176,8 +176,8 @@ function chunkNotes(text, size = 700) {
 }
 
 async function generateQuestion(unit, topic) {
-  // 1. Try pre-generated bank first
-  const bankPool = state.questionBank[topic.id];
+  // 1. Try pre-generated bank first (topic-level, then unit-level)
+  const bankPool = state.questionBank[topic.id] || state.questionBank[`unit_${unit.id}`];
   const historyIds = new Set(
     state.questionHistory
       .filter(h => h.topicId === topic.id)
@@ -397,6 +397,7 @@ function renderUnit() {
     </div>
     <div class="unit-content">
       <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
+        <button onclick="drillUnit(${u.id})" class="btn" style="background:${u.color};color:white;font-size:13px">⚡ Drill This Unit</button>
         <button onclick="goEssay()" class="btn" style="background:#6D28D9;color:white;font-size:13px">📝 Generate Essay Prompts</button>
         <button onclick="goMissed()" class="btn" style="background:#EF4444;color:white;font-size:13px">🔄 Missed (${state.missed.length})</button>
       </div>
@@ -784,6 +785,45 @@ window.startFullDrill = () => {
   const t = u.topics[Math.floor(Math.random()*u.topics.length)];
   state.selectedUnit = u;
   goTopic(t.id);
+};
+
+window.drillUnit = async (unitId) => {
+  const u = state.units.find(x => x.id === unitId);
+  if (!u) return;
+  state.selectedUnit = u;
+  // Pick a random topic just for display context; question comes from unit bank
+  const topic = u.topics[Math.floor(Math.random() * u.topics.length)];
+  state.selectedTopic = topic;
+  state.topicView = 'drill';
+  state.view = 'quiz';
+  state.question = null;
+  state.selected = null;
+  state.revealed = false;
+  state.error = null;
+  state.showNotes = false;
+  state.loading = true;
+  render();
+  try {
+    // Pull directly from unit bank, ignoring topic-level bank
+    const pool = state.questionBank[`unit_${u.id}`];
+    if (pool?.length) {
+      const historyIds = new Set(
+        state.questionHistory
+          .filter(h => h.unitId === u.id)
+          .map(h => h.question?.question?.slice(0, 60))
+      );
+      const unseen = pool.filter(q => !historyIds.has(q.question?.slice(0, 60)));
+      state.question = (unseen.length ? unseen : pool)[Math.floor(Math.random() * (unseen.length || pool.length))];
+      state.loading = false;
+    } else {
+      state.question = await generateQuestion(u, topic);
+      state.loading = false;
+    }
+  } catch(e) {
+    state.loading = false;
+    state.error = e.message.includes('No API key') ? 'Please set your API key (gear icon)' : e.message;
+  }
+  render();
 };
 
 window.drillMissed = () => {
