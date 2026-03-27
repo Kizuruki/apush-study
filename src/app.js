@@ -13,6 +13,7 @@ const state = {
   unitOverviews: {},
   loading: false,
   error: null,
+  unitView: 'topics',
   selected: null,
   revealed: false,
   sessionScore: { c: 0, t: 0 },
@@ -355,7 +356,39 @@ function renderUnit() {
         Show more ▾
       </button>
     </div>` : '';
-
+  const isNotesView = state.unitView === 'notes';
+  const unitNotesPath = `notes/fiveable/overview_${u.id}/index.html`;
+  const buttonRow = `
+    <div style="display:flex;gap:0;margin-bottom:14px;border:1px solid var(--border);border-radius:8px;overflow:hidden">
+      <button onclick="setUnitView('topics')"
+        style="flex:1;padding:9px;border:none;cursor:pointer;font-weight:600;font-size:13px;
+               background:${!isNotesView ? u.color : 'white'};
+               color:${!isNotesView ? 'white' : 'var(--navy)'}">
+        📋 Topics
+      </button>
+      <button onclick="setUnitView('notes')"
+        style="flex:1;padding:9px;border:none;cursor:pointer;font-weight:600;font-size:13px;
+               background:${isNotesView ? u.color : 'white'};
+               color:${isNotesView ? 'white' : 'var(--navy)'}">
+        📖 Unit Notes
+      </button>
+    </div>`;
+  const unitNotesHtml = `
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden">
+      <div style="font-size:10px;letter-spacing:2px;font-weight:700;text-transform:uppercase;
+                  color:#059669;padding:12px 16px;border-bottom:1px solid var(--border);
+                  display:flex;justify-content:space-between;align-items:center">
+        <span>📗 Fiveable — ${esc(u.sub)} Overview</span>
+        <a href="${unitNotesPath}" target="_blank"
+           style="font-size:11px;color:#059669;text-decoration:none;font-weight:600;letter-spacing:0">
+          Open fullscreen ↗
+        </a>
+      </div>
+      <div id="unit-notes-content-${u.id}"
+           style="padding:16px;font-size:13px;line-height:1.8;color:var(--navy);min-height:200px">
+        <div style="color:var(--muted);text-align:center;padding:40px">Loading unit notes…</div>
+      </div>
+    </div>`;
   const topicRows = u.topics.map(topic => {
     const k = `${u.id}-${topic.id}`;
     const p = tp[k] || { total:0, correct:0 };
@@ -399,15 +432,18 @@ function renderUnit() {
       ${renderTimeline(u.timeline, u.color)}
     </div>
     <div class="unit-content">
-      <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
-        <button onclick="drillUnit(${u.id})" class="btn" style="background:${u.color};color:white;font-size:13px">⚡ Drill This Unit</button>
-        <button onclick="goEssay()" class="btn" style="background:#6D28D9;color:white;font-size:13px">📝 Generate Essay Prompts</button>
-        <button onclick="goMissed()" class="btn" style="background:#EF4444;color:white;font-size:13px">🔄 Missed (${state.missed.length})</button>
-      </div>
-      ${overviewHtml}
-      <div class="hint-box">Click any topic to drill it. All 4 choices are historically accurate — wrong answers describe real events but the wrong connection.</div>
-      <div class="topic-list">${topicRows}</div>
-    </div>`;
+        ${buttonRow}
+        ${isNotesView ? unitNotesHtml : `
+          <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
+            <button onclick="drillUnit(${u.id})" class="btn" style="background:${u.color};color:white;font-size:13px">⚡ Drill This Unit</button>
+            <button onclick="goEssay()" class="btn" style="background:#6D28D9;color:white;font-size:13px">📝 Generate Essay Prompts</button>
+            <button onclick="goMissed()" class="btn" style="background:#EF4444;color:white;font-size:13px">🔄 Missed (${state.missed.length})</button>
+          </div>
+          ${overviewHtml}
+          <div class="hint-box">Click any topic to drill it...</div>
+          <div class="topic-list">${topicRows}</div>
+        `}
+      </div>`;
 }
 
 function renderNotesSummary(unit, topic) {
@@ -614,8 +650,8 @@ function renderQuiz() {
 
 }
 
-async function loadFiveableContent(topicId, htmlPath) {
-  const containerId = `fiveable-content-${topicId.replace('.','_')}`;
+async function loadFiveableContent(topicId, htmlPath, containerId = null) {
+  containerId = containerId || `fiveable-content-${topicId.replace('.','_')}`;
   const container = document.getElementById(containerId);
   if (!container) return;
 
@@ -746,10 +782,15 @@ function render() {
 }
 
 // ─── Navigation ────────────────────────────────────────────────────────────
-window.goHome = () => { state.view = 'home'; state.selectedUnit = null; state.selectedTopic = null; render(); };
+window.goHome = () => { 
+  state.view = 'home'; state.selectedUnit = null; 
+  state.selectedTopic = null; state.unitView = 'topics'; // add this
+  render(); 
+};
 window.goUnit = (id) => {
   state.selectedUnit = state.units.find(u => u.id === id);
   if (!state.selectedUnit) return;
+  state.unitView = 'topics'; // add this
   state.view = 'unit';
   render();
 };
@@ -807,6 +848,19 @@ window.loadEssay = async () => {
   }
   render();
 };
+window.setUnitView = (view) => {
+  state.unitView = view;
+  render();
+  if (view === 'notes') {
+    const u = state.selectedUnit;
+    setTimeout(() => loadFiveableContent(
+      `unit_${u.id}`,
+      `notes/fiveable/overview_${u.id}/index.html`,
+      `unit-notes-content-${u.id}`
+    ), 0);
+  }
+};
+
 window.goMissed = () => { state.view = 'missed'; render(); };
 window.goHistory = () => { state.view = 'history'; state.historyFilter = 'all'; render(); };
 window.chooseAnswer = (letter) => {
