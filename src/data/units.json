@@ -51,6 +51,13 @@
           "cedContent":"As European encroachments on Native lands increased, native peoples sought to defend their lands and ways of life through military resistance and diplomatic negotiations. Europeans and Native Americans had divergent worldviews on land ownership (communal vs. private), religion (polytheistic/animistic vs. monotheistic), and gender roles. Europeans like Sepúlveda and Las Casas debated the treatment of Indigenous people. Some groups allied with Europeans; others resisted through the Pueblo and Taino revolts.",
           "keyTerms":["syncretism","Pueblo Revolt","Virgin of Guadalupe","Las Casas vs. Sepúlveda","differing worldviews","cultural exchange"],
           "illustrativeExamples":["Cupul Uprising","Pueblo Revolt (1680)","Virgin of Guadalupe as syncretism","Allied tribes helped Cortés defeat Aztec","Adoption of Indigenous words: canoe, hammock, moccasin"]
+        },
+        {
+          "id":"1.7","title":"Causation in Period 1",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"Historians analyze the long- and short-term causes of European contact with the Americas and its effects on Native American, European, and African peoples. Key causal factors include technological innovation, economic competition between European states, and the desire to spread Christianity. The Columbian Exchange, demographic collapse, and the emergence of the Atlantic World were among the most significant effects.",
+          "keyTerms":["causation","long-term causes","short-term causes","Atlantic World","demographic collapse","Columbian Exchange"],
+          "illustrativeExamples":["European technological advances enabling exploration","Spanish desire for wealth and religious conversion","Population collapse as effect of contact","Emergence of plantation slavery as long-term effect"]
         }
       ]
     },
@@ -112,6 +119,13 @@
           "cedContent":"The British colonies experienced gradual Anglicization over time, developing autonomous political communities based on English models. Colonists' resistance to imperial control drew on local experiences of self-government and evolving ideas of liberty. The First Great Awakening (1730s–40s) challenged established religious hierarchies and fostered a sense of common identity. Transatlantic print culture expanded literacy and political ideas.",
           "keyTerms":["First Great Awakening","George Whitefield","Jonathan Edwards","Anglicization","colonial assemblies","print culture","Enlightenment"],
           "illustrativeExamples":["First Great Awakening (1730s–40s)","Jonathan Edwards 'Sinners in the Hands of an Angry God'","Boston News-Letter (first newspaper 1704)","Zenger Trial (1735) — free press","Colonial assemblies gaining power"]
+        },
+        {
+          "id":"2.8","title":"Comparison in Period 2",
+          "theme":"ARC","themeLabel":"American & Regional Culture","themeColor":"#F97316",
+          "cedContent":"Historians compare the development of distinct colonial regions — New England, the Middle Colonies, the Chesapeake, and the Carolina low country — examining how geography, religion, labor systems, and relationships with Native peoples shaped each region differently. Comparison also extends to contrasting English, French, Dutch, and Spanish colonial approaches.",
+          "keyTerms":["comparison","regional differences","New England","Chesapeake","Middle Colonies","colonial labor systems","religious diversity"],
+          "illustrativeExamples":["Puritan theocracy vs. Pennsylvania pluralism","Tobacco vs. rice plantation economies","English vs. French relationships with Native peoples","Indentured servitude vs. chattel slavery"]
         }
       ]
     },
@@ -195,6 +209,27 @@
           "cedContent":"War between France and Britain resulting from the French Revolution presented challenges to the United States over issues of neutrality, impressment, and trade. Washington set key precedents including the Cabinet system and serving only two terms. Hamilton's financial plan (national bank, assumption of state debts) clashed with Jefferson's agrarian vision, creating the first political parties. The Whiskey Rebellion demonstrated federal authority.",
           "keyTerms":["Hamilton's financial plan","National Bank","Whiskey Rebellion","Neutrality Proclamation","Jay's Treaty","XYZ Affair","Alien and Sedition Acts","Federalists vs. Democratic-Republicans"],
           "illustrativeExamples":["Hamilton's Financial Plan (1790)","Whiskey Rebellion (1794)","Neutrality Proclamation (1793)","Jay's Treaty (1795)","XYZ Affair (1797)","Alien and Sedition Acts (1798)","Virginia and Kentucky Resolutions (1798–99)"]
+        },
+        {
+          "id":"3.11","title":"Developing an American Identity",
+          "theme":"NAT","themeLabel":"American & National Identity","themeColor":"#3B82F6",
+          "cedContent":"The Revolution fostered a new American national identity rooted in republican ideals, but Americans debated what that identity meant. Federalists and Democratic-Republicans disagreed about the character of the new nation. Regional, ethnic, and racial identities coexisted with and often complicated national identity. The question of who was truly 'American' excluded enslaved people, women, and Native Americans.",
+          "keyTerms":["national identity","republicanism","civic virtue","Federalist vs. Democratic-Republican","E pluribus unum","citizenship","exclusions from identity"],
+          "illustrativeExamples":["Washington's Farewell Address warning against factionalism","Naturalization Act (1790) limited citizenship to 'free white persons'","Growth of American literature and arts","Competing visions: Hamilton's commercial nation vs. Jefferson's agrarian republic"]
+        },
+        {
+          "id":"3.12","title":"Movement in the Early Republic",
+          "theme":"MIG","themeLabel":"Migration & Settlement","themeColor":"#F59E0B",
+          "cedContent":"After independence, Americans moved westward in large numbers, pushing past the Appalachians into the trans-Appalachian West. The Northwest Ordinance (1787) created a framework for organizing new territories. This westward migration intensified conflicts with Native peoples who had been promised protection from encroachment. The internal migration of enslaved people also accelerated as Southern planters moved into new cotton lands.",
+          "keyTerms":["westward migration","trans-Appalachian West","Northwest Ordinance","Native American displacement","internal slave trade","land speculation","frontier"],
+          "illustrativeExamples":["Settlement of Kentucky and Tennessee (1780s–90s)","Northwest Ordinance (1787)","Conflict with Western Confederacy (Battle of Fallen Timbers, 1794)","Treaty of Greenville (1795)","Enslaved people moved into new cotton territories"]
+        },
+        {
+          "id":"3.13","title":"Continuity and Change in Period 3",
+          "theme":"NAT","themeLabel":"American & National Identity","themeColor":"#3B82F6",
+          "cedContent":"The Revolutionary era brought dramatic political changes — independence, republican government, new constitutional framework — while many social structures remained unchanged. Slavery continued and expanded; women remained largely excluded from public life; class hierarchies persisted. The tension between revolutionary ideals of liberty and equality and the reality of exclusion defined this period and set up conflicts for the nineteenth century.",
+          "keyTerms":["continuity","change","limits of revolution","republican ideals vs. reality","slavery's persistence","women's exclusion","social hierarchy"],
+          "illustrativeExamples":["Slavery continued despite revolutionary rhetoric","Property requirements mostly eliminated but race/gender barriers remained","Federalism replaced monarchy but local elites retained power","Some gradual Northern emancipation — major continuity in South"]
         }
       ]
     },
@@ -231,6 +266,13 @@
           "illustrativeExamples":["Missouri Compromise (1820) — 36°30' line","Tariff of Abominations (1828)","South Carolina Exposition (Calhoun, 1828)","Nullification Crisis (1832–33)","Compromise Tariff of 1833"]
         },
         {
+          "id":"4.4","title":"America on the World Stage",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"The early republic navigated a dangerous world of European great-power conflict, seeking to protect American commerce and territory while avoiding entanglement in foreign wars. The Monroe Doctrine (1823) declared the Western Hemisphere closed to further European colonization. Expansionist policies toward Native peoples and into Texas and Oregon reflected growing American confidence. The War of 1812 reinforced American nationalism.",
+          "keyTerms":["Monroe Doctrine","neutrality","War of 1812","expansionism","nationalism","impressment","foreign policy"],
+          "illustrativeExamples":["Monroe Doctrine (1823)","War of 1812 — Battle of New Orleans","Rush-Bagot Agreement (1817) demilitarized Great Lakes","Convention of 1818 — joint US-British occupation of Oregon","Adams-Onís Treaty (1819) acquired Florida"]
+        },
+        {
           "id":"4.5","title":"Market Revolution: Industrialization",
           "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
           "cedContent":"Innovations including textile machinery, steam engines, interchangeable parts, the telegraph, and agricultural inventions contributed to the Market Revolution. Legislation and judicial systems supported development of roads, canals, and railroads. The Lowell System employed young women in New England textile mills. Increasing Southern cotton production and Northern manufacturing created growing economic interdependence and sectional tension.",
@@ -259,6 +301,13 @@
           "illustrativeExamples":["Indian Removal Act (1830)","Trail of Tears (1838–39) — 4,000+ Cherokee deaths","Worcester v. Georgia (1832) — Jackson defied Supreme Court","Bank War (1832–36)","Specie Circular (1836) triggered Panic of 1837"]
         },
         {
+          "id":"4.9","title":"The Development of an American Culture",
+          "theme":"ARC","themeLabel":"American & Regional Culture","themeColor":"#F97316",
+          "cedContent":"American artists, writers, and intellectuals worked to create a distinctly American cultural identity separate from European traditions. The Hudson River School celebrated American landscapes. Transcendentalism (Emerson, Thoreau) promoted individualism and self-reliance. American literature explored national themes. The penny press and expanding print culture spread ideas rapidly. Popular culture including minstrelsy reflected and reinforced racial hierarchies.",
+          "keyTerms":["Transcendentalism","Emerson","Thoreau","Hudson River School","American Renaissance","penny press","minstrelsy","romanticism"],
+          "illustrativeExamples":["Ralph Waldo Emerson's 'Self-Reliance' (1841)","Thoreau's Walden (1854)","Hudson River School painters (Thomas Cole)","James Fenimore Cooper's Leatherstocking Tales","Penny press — New York Sun (1833)","Minstrel shows reinforced racist stereotypes"]
+        },
+        {
           "id":"4.10","title":"The Second Great Awakening",
           "theme":"ARC","themeLabel":"American & Regional Culture","themeColor":"#F97316",
           "cedContent":"The Second Great Awakening emphasized moral improvement, social perfection, and personal salvation through revivalism. Camp meetings and Charles Finney's preaching spread in northern cities. The African Methodist Episcopal Church and other Black religious institutions developed. The revival linked to social reform movements including temperance, abolitionism, and women's rights. Utopian communities (Oneida, Brook Farm) reflected perfectionist ideals.",
@@ -273,11 +322,25 @@
           "illustrativeExamples":["Garrison's The Liberator (1831)","Douglass's Narrative (1845)","Grimké sisters speaking publicly","Seneca Falls Convention (1848)","Horace Mann's public education reform","Dorothea Dix's prison/asylum reform","Amistad Case (1841)"]
         },
         {
+          "id":"4.12","title":"African Americans in the Early Republic",
+          "theme":"SOC","themeLabel":"Social Structures","themeColor":"#A855F7",
+          "cedContent":"Free Black communities grew in Northern cities and developed institutions — churches, schools, newspapers — that supported their communities and the abolitionist cause. Enslaved people in the South resisted bondage through everyday acts of resistance, cultural preservation, and organized revolts. The internal slave trade separated families and spread slavery westward. The abolition debate intensified as both pro-slavery and anti-slavery arguments hardened.",
+          "keyTerms":["free Black communities","AME Church","Frederick Douglass","slavery resistance","internal slave trade","abolitionism","Black press"],
+          "illustrativeExamples":["AME Church founded (Richard Allen, 1816)","Freedom's Journal — first Black newspaper (1827)","Nat Turner's Rebellion (1831)","Slave narratives as abolitionist tool","Internal slave trade — 1 million enslaved people moved 1820–60","David Walker's Appeal (1829)"]
+        },
+        {
           "id":"4.13","title":"The Society of the South in the Early Republic",
           "theme":"GEO","themeLabel":"Geography & Environment","themeColor":"#10B981",
           "cedContent":"Southern business leaders continued to rely on production and export of traditional agricultural staples (cotton, tobacco, rice, indigo). As overcultivation depleted arable land in the Southeast, slaveholders relocated plantations to more fertile lands in the Deep South and West, expanding slavery's reach. The defense of slavery evolved from 'necessary evil' to 'positive good.' Enslaved people resisted through both overt and covert means.",
           "keyTerms":["cotton kingdom","King Cotton","slave power","Nat Turner's Rebellion","Denmark Vesey","Gabriel Prosser","positive good argument","paternalism"],
           "illustrativeExamples":["Cotton gin expanded slavery westward","Nat Turner's Rebellion (1831)","Calhoun: 'Slavery as a Positive Good' (1837)","Gabriel Prosser's Rebellion (1800)","Denmark Vesey's conspiracy (1822)","Internal slave trade and 'Second Middle Passage'"]
+        },
+        {
+          "id":"4.14","title":"Causation in Period 4",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"Historians analyze the causes of the Market Revolution and its effects on American society, politics, and sectional tensions. Short-term causes include technological innovations; long-term causes include the transportation revolution and commercial agriculture. Effects include the growth of a market economy, rise of the middle class, reform movements, and intensified sectional conflict over slavery's expansion into new territories.",
+          "keyTerms":["causation","Market Revolution causes","industrialization effects","sectionalism origins","reform movement causes","slavery expansion"],
+          "illustrativeExamples":["Transportation revolution (canals, railroads) as cause of Market Revolution","Market Revolution causing rise of middle class","Growing sectionalism as effect of economic divergence","Reform movements caused by Second Great Awakening and social disruption"]
         }
       ]
     },
@@ -321,6 +384,13 @@
           "illustrativeExamples":["California admitted as free state","Fugitive Slave Act (1850) — required Northern compliance","Uncle Tom's Cabin (Harriet Beecher Stowe, 1852)","Personal liberty laws in Northern states","Underground Railroad expanded after 1850"]
         },
         {
+          "id":"5.5","title":"Sectional Conflict: Regional Differences",
+          "theme":"NAT","themeLabel":"American & National Identity","themeColor":"#3B82F6",
+          "cedContent":"By the 1850s, the North and South had developed distinct economic systems and cultures. The North was industrializing, with free labor and growing cities; the South relied on plantation slavery and agricultural export. These economic differences produced different political interests and values. Northern abolitionists and Southern fire-eaters increasingly viewed each other as existential threats. 'Bleeding Kansas' dramatized the incompatibility of the two systems.",
+          "keyTerms":["free labor ideology","slave power","sectionalism","Fire-Eaters","Northern abolitionism","economic divergence","popular sovereignty failure"],
+          "illustrativeExamples":["Helper's Impending Crisis (1857) — Southern yeomen harmed by slavery","George Fitzhugh defended slavery as superior to Northern wage labor","'Bleeding Kansas' violence exposed irreconcilable differences","Lincoln's 'House Divided' speech (1858)","Southern fire-eaters demanded federal slave code for territories"]
+        },
+        {
           "id":"5.6","title":"Failure of Compromise",
           "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
           "cedContent":"The Second Party System ended when the issues of slavery and anti-immigrant nativism weakened loyalties to the two major parties. The Kansas-Nebraska Act (1854) repealed the Missouri Compromise's ban on slavery north of 36°30', leading to 'Bleeding Kansas' violence. The Republican Party formed on an anti-slavery-extension platform. Dred Scott v. Sandford (1857) ruled that Congress could not ban slavery in territories. John Brown's Harper's Ferry raid (1859) intensified Southern fears.",
@@ -361,6 +431,13 @@
           "cedContent":"Segregation, violence, Supreme Court decisions, and local political tactics progressively stripped away African Americans' political rights and economic opportunities. The Compromise of 1877 withdrew federal troops from the South. Redeemer governments dismantled Reconstruction reforms. KKK terror suppressed Black political participation. The Supreme Court limited the 14th Amendment in the Civil Rights Cases (1883). Sharecropping and debt peonage replaced formal slavery.",
           "keyTerms":["Compromise of 1877","Redeemers","KKK","sharecropping","debt peonage","Civil Rights Cases (1883)","Plessy v. Ferguson","Jim Crow"],
           "illustrativeExamples":["Compromise of 1877 — Hayes becomes president, troops withdrawn","Civil Rights Cases (1883) — 14th Amendment limited","Convict leasing system","Ida B. Wells documented lynching","Sharecropping and crop lien system","Poll taxes, literacy tests, grandfather clauses"]
+        },
+        {
+          "id":"5.12","title":"Comparison in Period 5",
+          "theme":"NAT","themeLabel":"American & National Identity","themeColor":"#3B82F6",
+          "cedContent":"Historians compare the experiences of different groups during the Civil War and Reconstruction — white Southerners, African Americans, white Northerners, women, and Native Americans. They also compare Reconstruction's achievements with its ultimate failures, and contrast Lincoln's lenient approach with Radical Republican plans. The comparison of Reconstruction's promises with post-1877 realities is central to evaluating this era.",
+          "keyTerms":["comparison","Reconstruction approaches","Lincoln vs. Radicals","freedpeople's experience","Lost Cause","women during wartime","Native Americans during Civil War"],
+          "illustrativeExamples":["Lincoln's 10% plan vs. Wade-Davis Bill","Black political participation during Reconstruction vs. after 1877","Women's wartime roles North and South","Native peoples displaced during Civil War (Sand Creek Massacre 1864)","Freedpeople's aspirations vs. sharecropping reality"]
         }
       ]
     },
@@ -381,6 +458,13 @@
           "cedContent":"Rapid industrialization, technological innovation, and the rise of big business transformed the American economy after the Civil War. Massive immigration, urbanization, and labor conflict defined the Gilded Age, while farmers and workers sought political solutions to economic inequality.",
           "keyTerms":["industrialization","Gilded Age","immigration","urbanization","labor movement"],
           "illustrativeExamples":["Second Industrial Revolution","Rise of monopolies","Populist and labor reform movements"]
+        },
+        {
+          "id":"6.2","title":"Westward Expansion: Economic Development",
+          "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
+          "cedContent":"Federal land grants to railroad companies accelerated western economic development. The cattle industry, mining booms (gold, silver, copper), and commercial agriculture transformed the Great Plains and Far West into zones of capitalist extraction. Homesteaders faced difficult conditions; many failed. Railroad corporations dominated western economies and political systems, generating calls for regulation.",
+          "keyTerms":["transcontinental railroad","cattle drives","mining booms","Homestead Act","land grants","commercial agriculture","railroad land grants"],
+          "illustrativeExamples":["Transcontinental Railroad completed (1869)","Cattle drives to Abilene and Dodge City","Comstock Lode silver boom (Nevada)","Homestead Act (1862) — 160 acres free","Railroad land grants — 170 million acres total","Bonanza farms on Great Plains"]
         },
         {
           "id":"6.3","title":"Westward Expansion: Social & Cultural Development",
@@ -425,6 +509,20 @@
           "illustrativeExamples":["Chinese Exclusion Act (1882)","Ellis Island (opened 1892)","Angel Island (Pacific gateway)","Chinatown in San Francisco","Kleindeutschland (Little Germany)","Jacob Riis: How the Other Half Lives (1890)"]
         },
         {
+          "id":"6.9","title":"Responses to Immigration in the Gilded Age",
+          "theme":"NAT","themeLabel":"American & National Identity","themeColor":"#3B82F6",
+          "cedContent":"Nativist movements arose in response to the massive influx of 'New Immigrants' from Southern and Eastern Europe and Asian immigrants. Nativists argued that these groups were racially inferior and could not assimilate into American democracy. Chinese Exclusion Act (1882) was the first race-based immigration restriction. Eugenics provided pseudo-scientific justification for restriction. The Immigration Restriction League lobbied for literacy tests.",
+          "keyTerms":["nativism","Chinese Exclusion Act","Immigration Restriction League","eugenics","literacy tests","Anglo-Saxon identity","anti-Catholic sentiment"],
+          "illustrativeExamples":["Chinese Exclusion Act (1882)","Dennis Kearney's Workingmen's Party — 'The Chinese Must Go'","Immigration Restriction League (1894)","Johnson-Reed Act precursors","Josiah Strong's Our Country (1885) — Anglo-Saxon superiority","Anti-Catholic and anti-Jewish prejudice in nativist movements"]
+        },
+        {
+          "id":"6.10","title":"Development of the Middle Class",
+          "theme":"SOC","themeLabel":"Social Structures","themeColor":"#A855F7",
+          "cedContent":"Industrialization created a new middle class of managers, professionals, clerks, and small business owners. Middle-class culture emphasized respectability, education, domesticity, and consumption. Department stores, leisure activities, and new consumer goods defined middle-class identity. Women's roles within middle-class families reflected the Cult of Domesticity while also expanding opportunities through club movements and higher education.",
+          "keyTerms":["middle class","consumer culture","department stores","women's clubs","higher education for women","respectability","professionalization"],
+          "illustrativeExamples":["Rise of department stores (Macy's, Marshall Field's)","Women's club movement (General Federation of Women's Clubs, 1890)","Morrill Land-Grant Act — expansion of higher education","Sears Roebuck catalog — consumer culture","Growth of white-collar jobs","Thorstein Veblen's 'conspicuous consumption' critique"]
+        },
+        {
           "id":"6.11","title":"Reform in the Gilded Age",
           "theme":"SOC","themeLabel":"Social Structures","themeColor":"#A855F7",
           "cedContent":"Many women sought greater equality with men, joining voluntary organizations, going to college, and promoting social and political reform. The Farmers' Alliance united rural communities against railroad discrimination and banking practices. The Populist (People's) Party demanded silver coinage, railroad regulation, graduated income tax, and direct election of senators. Bryan's Cross of Gold speech (1896) made silver the central issue.",
@@ -437,6 +535,20 @@
           "cedContent":"Foreign policymakers increasingly looked outside US borders to gain greater influence and control over markets and resources. Arguments for laissez-faire policies and competition dominated political discourse, with business leaders citing Social Darwinism. The Interstate Commerce Act (1887) was the first federal railroad regulation; the Sherman Antitrust Act (1890) was mostly ineffective initially. Civil service reform (Pendleton Act) replaced the spoils system.",
           "keyTerms":["Interstate Commerce Act","Sherman Antitrust Act","Pendleton Civil Service Act","laissez-faire","Grover Cleveland","currency debates","gold standard"],
           "illustrativeExamples":["Interstate Commerce Act (1887)","Sherman Antitrust Act (1890)","Pendleton Civil Service Act (1883)","Grover Cleveland vetoed farmer relief bill","Wabash v. Illinois (1886) — states can't regulate interstate RR","Alaska purchase (1867)"]
+        },
+        {
+          "id":"6.13","title":"Politics in the Gilded Age",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"Gilded Age politics were characterized by intense party competition, high voter turnout, and pervasive corruption. The spoils system entrenched patronage networks. Republicans waved the 'bloody shirt' to remind Northern voters of the Civil War; Democrats relied on the Solid South and urban machine politics. Scandals (Credit Mobilier, Whiskey Ring) defined the Grant era. Civil service reform (Pendleton Act, 1883) began addressing corruption.",
+          "keyTerms":["Gilded Age politics","patronage","spoils system","bloody shirt","urban machines","Tammany Hall","civil service reform","Pendleton Act"],
+          "illustrativeExamples":["Credit Mobilier scandal (1872)","Whiskey Ring scandal (Grant era)","Tammany Hall and Boss Tweed","Pendleton Civil Service Act (1883)","Mugwumps — reform Republicans","Hayes-Tilden disputed election (1876)","Garfield assassination (1881) accelerated civil service reform"]
+        },
+        {
+          "id":"6.14","title":"Continuity and Change in Period 6",
+          "theme":"WXT","themeLabel":"Work, Exchange & Technology","themeColor":"#8B5CF6",
+          "cedContent":"The Gilded Age brought dramatic economic change through industrialization, while racial hierarchies established during slavery continued and were reinforced through Jim Crow laws and Supreme Court decisions. The nature of work changed fundamentally with industrial capitalism, yet workers' lack of political power showed continuity with earlier periods. Reform impulses persisted from antebellum era into Gilded Age progressivism.",
+          "keyTerms":["continuity","change","industrial transformation","racial hierarchy continuity","labor conditions","reform persistence","political corruption continuity"],
+          "illustrativeExamples":["Racial oppression continued under new legal forms (Jim Crow)","Economic inequality persisted despite growth","Reform tradition continued from antebellum to Gilded Age","Nature of work fundamentally transformed by industrialization","Political corruption continued despite civil service reform"]
         }
       ]
     },
@@ -522,6 +634,13 @@
           "illustrativeExamples":["FDIC — bank deposit insurance","CCC — Civilian Conservation Corps","Social Security Act (1935)","Wagner Act (NLRA 1935) — legalized unions","Glass-Steagall Act (1933)","Court-packing plan (1937) — failed","Huey Long's 'Share Our Wealth'","Conservative Manifesto (1937)"]
         },
         {
+          "id":"7.11","title":"Interwar Foreign Policy",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"After rejecting the League of Nations, the US pursued a policy of independent internationalism rather than full isolationism in the 1920s — participating in arms limitation conferences (Washington Naval Conference 1921, Kellogg-Briand Pact 1928) while avoiding political entanglements. The Depression led to the Smoot-Hawley Tariff, which worsened global economic instability. The Neutrality Acts (1935–37) attempted to keep the US out of another European war.",
+          "keyTerms":["Washington Naval Conference","Kellogg-Briand Pact","Neutrality Acts","isolationism","independent internationalism","Good Neighbor Policy","Lend-Lease"],
+          "illustrativeExamples":["Washington Naval Conference (1921–22)","Kellogg-Briand Pact (1928) — outlawed war","Neutrality Acts (1935, 1936, 1937)","Good Neighbor Policy (FDR) toward Latin America","Lend-Lease Act (1941)","Cash and Carry policy (1939)"]
+        },
+        {
           "id":"7.12","title":"World War II: Mobilization",
           "theme":"SOC","themeLabel":"Social Structures","themeColor":"#A855F7",
           "cedContent":"Mobilization provided opportunities for women and minorities to improve their socioeconomic positions for the war's duration. FDR issued Executive Order 9066, ordering over 100,000 Japanese-Americans interned (upheld in Korematsu v. US). Migration to the United States from Mexico increased through the Bracero Program. Women entered the workforce in large numbers ('Rosie the Riveter'). The Double V campaign demanded democracy abroad and at home.",
@@ -534,6 +653,20 @@
           "cedContent":"The United States and its allies achieved military victory through Allied cooperation, technological and scientific advances, and overwhelming industrial capacity. D-Day (June 6, 1944) opened a second front and started the liberation of France. Island-hopping in the Pacific advanced US forces toward Japan. The atomic bombs at Hiroshima and Nagasaki ended the war with Japan. The Yalta Conference shaped the postwar world.",
           "keyTerms":["D-Day","island hopping","atomic bomb","Hiroshima","Nagasaki","Yalta Conference","Grand Alliance","Holocaust"],
           "illustrativeExamples":["D-Day — Normandy invasion (June 6, 1944)","Battle of Midway (1942) — Pacific turning point","Hiroshima (Aug 6) and Nagasaki (Aug 9, 1945)","Yalta Conference (Feb 1945)","Holocaust — 6 million Jews killed","All-Nisei units (442nd Regimental Combat Team)","Nuremberg Trials established war crimes precedent"]
+        },
+        {
+          "id":"7.14","title":"Postwar Diplomacy",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"The Yalta and Potsdam conferences attempted to shape the postwar order but revealed growing tensions between the US and USSR. The United Nations was founded (1945) to prevent future wars. US occupation policies in Japan and Germany aimed to democratize and rebuild former enemies. The Marshall Plan and Truman Doctrine established the framework for Cold War containment. The Berlin Crisis (1948–49) was an early Cold War flashpoint.",
+          "keyTerms":["Yalta Conference","Potsdam Conference","United Nations","occupation of Japan","Marshall Plan","Truman Doctrine","Berlin Airlift","containment origins"],
+          "illustrativeExamples":["Yalta Conference (Feb 1945) — postwar spheres of influence","UN founded (June 1945)","Nuremberg Trials (1945–46)","MacArthur's occupation of Japan — democratization","Marshall Plan (1948) — $13 billion for European recovery","Berlin Airlift (1948–49)","NATO founded (1949)"]
+        },
+        {
+          "id":"7.15","title":"Comparison in Period 7",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"Historians compare US responses to different foreign policy challenges in Period 7 — imperialism vs. WWI intervention vs. WWII mobilization — and contrast the domestic impacts of WWI and WWII. They also compare the experiences of different groups (women, African Americans, Japanese Americans) during the two world wars, and contrast the Progressives' reform approaches with the New Deal's response to the Depression.",
+          "keyTerms":["comparison","WWI vs. WWII","Progressive Era vs. New Deal","minority experiences wartime","US intervention patterns","home front comparison"],
+          "illustrativeExamples":["WWI vs. WWII: both expanded federal power and minority migration","Progressives used regulation; New Deal used direct intervention","African Americans: Great Migration in both wars, Double V in WWII","Japanese internment (WWII) vs. anti-German sentiment (WWI)","US entry: reluctant in both wars but different triggers"]
         }
       ]
     },
@@ -577,11 +710,25 @@
           "illustrativeExamples":["GI Bill (1944) — college, housing for veterans","Levittown — mass-produced suburbs","Eisenhower's farewell: military-industrial complex (1961)","Interstate Highway Act (1956)","NASA founded (1958)","FHA and HOLC loans excluded Black Americans","Television transformed consumer culture"]
         },
         {
+          "id":"8.5","title":"Culture after 1945",
+          "theme":"ARC","themeLabel":"American & Regional Culture","themeColor":"#F97316",
+          "cedContent":"Postwar prosperity fueled a consumer culture and suburban conformity celebrated by mainstream America. Television transformed American culture, spreading mass consumer values and political communication. The Beat Generation (Kerouac, Ginsberg) rejected conformist suburban values. Rock and roll, drawing on African American musical traditions, created a distinct youth culture. The tension between conformity and dissent set the stage for the 1960s counterculture.",
+          "keyTerms":["consumer culture","television","Beat Generation","rock and roll","suburban conformity","Beats","youth culture precursors","conformity vs. dissent"],
+          "illustrativeExamples":["Jack Kerouac's On the Road (1957)","Allen Ginsberg's Howl (1956)","Elvis Presley — rock and roll crossed racial lines","Ed Sullivan Show — mass TV culture","Levittown conformity criticized by social critics","The Man in the Gray Flannel Suit (1955) — conformity critique","Disney and consumer family culture"]
+        },
+        {
           "id":"8.6","title":"Early Steps in the Civil Rights Movement",
           "theme":"SOC","themeLabel":"Social Structures","themeColor":"#A855F7",
           "cedContent":"The three branches of the federal government used measures including desegregation of the armed services (Executive Order 9981) and Brown v. Board of Education to advance the cause of civil rights. The NAACP used legal challenges (Thurgood Marshall). Montgomery Bus Boycott (1955–56) launched MLK's career. Massive resistance in the South (Citizens' Councils, KKK) fought desegregation. Little Rock crisis (1957) tested federal enforcement power.",
           "keyTerms":["Brown v. Board","Thurgood Marshall","Montgomery Bus Boycott","MLK","Executive Order 9981","massive resistance","Little Rock","NAACP"],
           "illustrativeExamples":["Executive Order 9981 (1948) — desegregated military","Brown v. Board of Education (1954)","Browder v. Gayle (1956) — Montgomery buses","Montgomery Bus Boycott (1955–56)","Little Rock Central High (1957)","Southern Manifesto (1956)","Emmett Till murder (1955)"]
+        },
+        {
+          "id":"8.7","title":"America as a World Power",
+          "theme":"WOR","themeLabel":"America in the World","themeColor":"#06B6D4",
+          "cedContent":"US foreign policy in the Cold War era extended American power globally through military alliances, covert operations, economic aid, and direct military intervention. CIA covert operations (Iran 1953, Guatemala 1954) overthrew governments deemed communist-friendly. Eisenhower's 'New Look' policy relied on nuclear deterrence and covert action. Kennedy's flexible response broadened options. The Alliance for Progress attempted to counter communism in Latin America through development aid.",
+          "keyTerms":["covert operations","CIA","New Look policy","flexible response","Alliance for Progress","NSC-68","nuclear deterrence","Eisenhower Doctrine"],
+          "illustrativeExamples":["CIA overthrows Mossadegh in Iran (1953)","CIA overthrows Arbenz in Guatemala (1954)","NSC-68 (1950) — massive defense buildup","Eisenhower's 'New Look' — massive retaliation","Bay of Pigs (1961)","Alliance for Progress (1961)","Peace Corps founded (1961)"]
         },
         {
           "id":"8.8","title":"The Vietnam War",
@@ -612,11 +759,32 @@
           "illustrativeExamples":["NOW founded (1966)","Equal Pay Act (1963)","Title IX (1972)","César Chávez and UFW grape boycott","AIM — Wounded Knee standoff (1973)","Stonewall Uprising (1969)","ERA passed Congress but not ratified","Betty Friedan's The Feminine Mystique (1963)"]
         },
         {
+          "id":"8.12","title":"Youth Culture of the 1960s",
+          "theme":"ARC","themeLabel":"American & Regional Culture","themeColor":"#F97316",
+          "cedContent":"The baby boom generation came of age in the 1960s and challenged established social and political values. The counterculture rejected mainstream materialism, promoted peace and free expression, and experimented with communal living and drugs. The New Left (SDS, Port Huron Statement) linked civil rights to economic and political critique. Woodstock (1969) symbolized the counterculture at its peak. The generation gap divided American families and communities.",
+          "keyTerms":["counterculture","New Left","SDS","Port Huron Statement","Woodstock","generation gap","hippies","antiwar movement"],
+          "illustrativeExamples":["Port Huron Statement (SDS, 1962)","Students for a Democratic Society (SDS)","Woodstock Music Festival (1969)","Free Speech Movement — Berkeley (1964)","Summer of Love (San Francisco, 1967)","Vietnam War protests on campuses","Kent State shootings (1970)"]
+        },
+        {
+          "id":"8.13","title":"The Environment and Natural Resources from 1968 to 1980",
+          "theme":"GEO","themeLabel":"Geography & Environment","themeColor":"#10B981",
+          "cedContent":"Growing awareness of environmental degradation led to the modern environmental movement and significant federal legislation. Rachel Carson's Silent Spring (1962) launched public concern about pesticides. The first Earth Day (1970) mobilized millions. Nixon signed the EPA, Clean Air Act (1970), Clean Water Act (1972), and Endangered Species Act (1973) into law. The energy crisis (1973 OPEC embargo) raised questions about American dependence on fossil fuels.",
+          "keyTerms":["environmental movement","EPA","Clean Air Act","Clean Water Act","Rachel Carson","Earth Day","OPEC embargo","energy crisis","Endangered Species Act"],
+          "illustrativeExamples":["Rachel Carson's Silent Spring (1962)","First Earth Day (April 22, 1970)","EPA established (1970)","Clean Air Act (1970) and Clean Water Act (1972)","Endangered Species Act (1973)","OPEC oil embargo (1973)","Three Mile Island nuclear accident (1979)","Love Canal toxic waste scandal (1978)"]
+        },
+        {
           "id":"8.14","title":"Society in Transition",
           "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
           "cedContent":"Public confidence and trust in government declined in the 1970s in the wake of Watergate, Vietnam, and economic stagflation. The 1970s saw growing clashes between conservatives and liberals over social and cultural issues, the power of the federal government, and economic policy. Stagflation (inflation + unemployment + energy crisis) shook confidence in Keynesian economics. The rise of New Right (Moral Majority, anti-ERA) set stage for Reagan.",
           "keyTerms":["Watergate","stagflation","energy crisis","New Right","Moral Majority","ERA defeat","Nixon resignation","neo-conservatism"],
           "illustrativeExamples":["Watergate break-in (1972)","Nixon resignation (August 1974)","OPEC oil embargo (1973)","Stagflation — high inflation + unemployment","Moral Majority founded (Falwell, 1979)","ERA defeated (3 states short of ratification)","Iran hostage crisis (1979)","American Conservative Union"]
+        },
+        {
+          "id":"8.15","title":"Continuity and Change in Period 8",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"The Cold War era brought dramatic change — civil rights legislation, Great Society programs, massive federal expansion — while racial and economic inequalities persisted. The expansion of rights to African Americans, women, and other groups represented genuine change, yet implementation remained incomplete. The backlash against Great Society liberalism and the rise of the New Right represented continuity in American conservatism adapting to new circumstances.",
+          "keyTerms":["continuity","change","civil rights achievements vs. limits","federal expansion","conservative backlash","Cold War continuity","social movement legacy"],
+          "illustrativeExamples":["Civil rights laws passed but racial inequality persisted","Federal government expanded but conservative backlash grew","Women gained new rights but gender gap in wages continued","Cold War shaped both foreign and domestic policy throughout period","Vietnam and Watergate produced lasting distrust of government"]
         }
       ]
     },
@@ -672,6 +840,13 @@
           "cedContent":"The War on Terror sought to improve security within the United States but raised questions about the protection of civil liberties. Conflicts in the Middle East and concerns about climate change led to debates about US energy policy. Despite challenges, the United States continued as the world's leading superpower. The 2008 financial crisis and the Obama administration's response shaped debates about government's economic role.",
           "keyTerms":["9/11","War on Terror","PATRIOT Act","Iraq War","Afghanistan","climate change","2008 financial crisis","ACA","Obama"],
           "illustrativeExamples":["9/11 attacks (Sept 11, 2001)","USA PATRIOT Act (2001)","Iraq War (2003) — WMDs not found","Hurricane Katrina (2005) exposed inequalities","2008 financial crisis — bank bailouts (TARP)","Obama elected (2008) — historic milestone","Affordable Care Act (2010)","Paris Climate Agreement debates"]
+        },
+        {
+          "id":"9.7","title":"Causation in Period 9",
+          "theme":"PCE","themeLabel":"Politics & Power","themeColor":"#EF4444",
+          "cedContent":"Historians analyze the causes of the conservative movement's rise and its effects on American politics and society. Long-term causes include backlash against Great Society liberalism, racial resentment after civil rights, and the cultural conflicts of the 1960s. Short-term causes include stagflation, the Iran hostage crisis, and Carter's perceived weakness. Effects include deregulation, tax cuts, weakening of the welfare state, and a realignment of the political parties.",
+          "keyTerms":["causation","conservative movement causes","Reagan Revolution effects","party realignment","backlash","political realignment","New Right causes"],
+          "illustrativeExamples":["Backlash against civil rights and Great Society as long-term cause","Stagflation and Carter weakness as short-term causes","Reagan Revolution's effects: deregulation, tax cuts, defense buildup","Southern Strategy caused Democratic-to-Republican shift in South","Post–Cold War world created new foreign policy challenges"]
         }
       ]
     }
