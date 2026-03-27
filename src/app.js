@@ -469,10 +469,26 @@ function renderQuiz() {
     const notesContent =
       rawSection('Heimler Notes — Original', '📘', heimlerRaw, u.color) ||
       rawSection('Heimler Study Guide — Summary', '📘', heimlerSum, u.color);
-
-    const fiveableContent =
-      rawSection('Fiveable Study Guide — Original Scraped', '📗', fiveableRaw, '#059669') ||
-      rawSection('Fiveable Study Guide — Summary', '📗', fiveableSum, '#059669');
+    
+    // Check if we have a saved Fiveable HTML file for this topic
+    const fiveableHtmlPath = `notes/fiveable/topic_${topic.id.replace('.','_')}.html`;
+    const fiveableContent = `
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:12px">
+        <div style="font-size:10px;letter-spacing:2px;font-weight:700;text-transform:uppercase;color:#059669;padding:12px 16px;border-bottom:1px solid var(--border)">
+          📗 Fiveable Study Guide
+        </div>
+        <iframe
+          src="${fiveableHtmlPath}"
+          style="width:100%;height:600px;border:none;display:block"
+          title="Fiveable Study Guide — Topic ${topic.id}"
+          loading="lazy"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='block'"
+        ></iframe>
+        <div style="display:none;padding:16px;font-size:13px;color:var(--muted)">
+          ⚠ HTML file not saved yet for this topic.
+          ${fiveableRaw ? `<div style="margin-top:12px;white-space:pre-wrap;font-family:'DM Mono',monospace;font-size:12px;line-height:1.7;color:var(--navy)">${esc(fiveableRaw)}</div>` : ''}
+        </div>
+      </div>`;
 
     const cedContent = `
       <div style="background:#FFF8ED;border:1px solid #FDE68A;border-radius:10px;padding:16px;margin-bottom:12px">
