@@ -674,12 +674,12 @@ async function loadFiveableContent(topicId, htmlPath, containerId = null) {
     // Make all links open in new tab so they don't navigate away
     container.querySelectorAll('a').forEach(a => a.setAttribute('target', '_blank'));
 
-    // Fix relative image paths to point to the folder
-    const folder = htmlPath.replace('/index.html', '');
+    // Fix relative image paths using absolute URL resolution
+    const base = new URL(htmlPath, window.location.href).href.replace('/index.html', '/');
     container.querySelectorAll('img').forEach(img => {
       const src = img.getAttribute('src');
       if (src && !src.startsWith('http') && !src.startsWith('data:')) {
-        img.src = `${folder}/${src}`;
+        img.src = new URL(src, base).href;
       }
     });
 
