@@ -25,11 +25,11 @@ const state = {
 // ─── Helpers ──────────────────────────────────────────────────────────────
 function load(key) { try { return JSON.parse(localStorage.getItem(key)); } catch { return null; } }
 function save(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch {} }
-function getApiKey() { return localStorage.getItem('anthropic_api_key') || ''; }
+function getApiKey() { return localStorage.getItem('openai_api_key') || ''; }
 function saveApiKey() {
   const key = document.getElementById('apiKeyInput')?.value?.trim();
-  if (!key || !key.startsWith('sk-')) { alert('Please enter a valid Anthropic API key (starts with sk-)'); return; }
-  localStorage.setItem('anthropic_api_key', key);
+  if (!key || !key.startsWith('sk-')) { alert('Please enter a valid OpenAI API key (starts with sk-)'); return; }
+  localStorage.setItem('openai_api_key', key);
   document.getElementById('apiKeyModal').style.display = 'none';
   render();
 }
@@ -142,14 +142,14 @@ const FIVEABLE_URLS = {
 async function callClaude(prompt, maxTokens = 1100) {
   const key = getApiKey();
   if (!key) throw new Error('No API key');
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
+  const res = await fetch('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
-    body: JSON.stringify({ model: 'claude-sonnet-4-20250514', max_tokens: maxTokens, messages: [{ role: 'user', content: prompt }] })
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${key}` },
+    body: JSON.stringify({ model: 'gpt-4o-mini', max_tokens: maxTokens, messages: [{ role: 'user', content: prompt }] })
   });
   const data = await res.json();
   if (data.error) throw new Error(data.error.message);
-  return data.content[0].text;
+  return data.choices[0].message.content;
 }
 
 // ─── Question generator ────────────────────────────────────────────────────
