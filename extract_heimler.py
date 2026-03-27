@@ -17,6 +17,7 @@ from openai import OpenAI
 
 PDF_DIR = Path("notes/heimler")
 OUTPUT  = Path("src/data/heimler_notes.json")
+RAW_OUTPUT = Path("src/data/heimler_raw.json")
 
 # Map known Heimler section titles → CED topic IDs
 SECTION_TO_TOPICS = {
@@ -112,7 +113,10 @@ def main():
 
     client = OpenAI(api_key=api_key)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-
+    raw_heimler = {}
+    if args.resume and RAW_OUTPUT.exists():
+        with open(RAW_OUTPUT) as f:
+            raw_heimler = json.load(f)
     existing = {}
     if args.resume and OUTPUT.exists():
         with open(OUTPUT) as f:
@@ -155,6 +159,9 @@ def main():
                 if not topic_ids: continue
 
                 for tid in topic_ids:
+                    raw_heimler[tid] = content  # save raw PDF-extracted text
+                    with open(RAW_OUTPUT, "w", encoding="utf-8") as f:
+                        json.dump(raw_heimler, f, indent=2, ensure_ascii=False)
                     if args.resume and tid in notes: continue
                     print(f"    → Topic {tid} from '{sec_title}'")
                     try:
