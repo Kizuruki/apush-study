@@ -337,6 +337,7 @@ function renderHome() {
 function renderUnit() {
   const u = state.selectedUnit;
   const tp = state.topicProgress;
+  
   const topicRows = u.topics.map(topic => {
     const k = `${u.id}-${topic.id}`;
     const p = tp[k] || { total:0, correct:0 };
@@ -350,7 +351,7 @@ function renderUnit() {
           <div class="progress-bar" style="flex:1"><div class="progress-fill" style="width:${p2}%;background:${p2>=70?'var(--ok-border)':'#F59E0B'}"></div></div>
           <span style="font-size:11px;color:var(--muted)">${p.correct}/${p.total}</span>
          </div>` : '';
-    return `<div class="card topic-row" style="--active-color:${u.color}" onclick="goTopic('${topic.id}')">
+    return `<div class="card topic-row" style="--active-color:${u.color}" onclick="goTopic('${topic.id}','drill')">
       <div style="flex:1">
         <div class="topic-meta">
           <span class="topic-id" style="color:${u.color}">Topic ${topic.id}</span>
@@ -361,15 +362,10 @@ function renderUnit() {
         <div style="font-size:12px;color:var(--muted);margin-top:3px;line-height:1.5">${esc(topic.cedContent?.slice(0,110))}…</div>
         ${progressBar}
       </div>
-      return `<div class="card topic-row" style="--active-color:${u.color}" onclick="goTopic('${topic.id}','drill')">
-        <div style="flex:1">
-          ...existing content...
-        </div>
-        <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
-          <div class="topic-drill" style="background:${u.color}" onclick="event.stopPropagation();goTopic('${topic.id}','drill')">Drill →</div>
-          <div class="topic-drill" style="background:#6D28D9;font-size:11px" onclick="event.stopPropagation();goTopic('${topic.id}','notes')">Notes 📖</div>
-        </div>
-      </div>`;
+      <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
+        <div class="topic-drill" style="background:${u.color}" onclick="event.stopPropagation();goTopic('${topic.id}','drill')">Drill →</div>
+        <div class="topic-drill" style="background:#6D28D9;font-size:11px" onclick="event.stopPropagation();goTopic('${topic.id}','notes')">Notes 📖</div>
+      </div>
     </div>`;
   }).join('');
 
@@ -383,21 +379,6 @@ function renderUnit() {
     <div class="unit-timeline-wrap">
       <div class="unit-timeline-label">Period Timeline</div>
       ${renderTimeline(u.timeline, u.color)}
-      const overviewKey = `overview_${u.id}`;
-      const overviewText = state.unitOverviews?.[overviewKey];
-      const overviewHtml = overviewText ? `
-        <div style="background:#F0F7FF;border:1px solid #BFDBFE;border-radius:10px;padding:14px 16px;margin-bottom:14px">
-          <div style="font-size:10px;letter-spacing:2px;font-weight:700;text-transform:uppercase;color:#1D4ED8;margin-bottom:6px">
-            📋 Unit Overview
-          </div>
-          <div id="overview-body-${u.id}" style="font-size:13px;color:#1E3A5F;line-height:1.75;overflow:hidden;max-height:80px;transition:max-height 0.3s ease">
-            ${esc(overviewText)}
-          </div>
-          <button onclick="toggleOverview(${u.id})" id="overview-toggle-${u.id}"
-            style="margin-top:8px;font-size:11px;color:#1D4ED8;background:none;border:none;cursor:pointer;font-weight:600;padding:0">
-            Show more ▾
-          </button>
-        </div>` : '';
     </div>
     <div class="unit-content">
       <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
@@ -594,6 +575,7 @@ function renderQuiz() {
       ${scorePanel}
     </div>
     <div class="quiz-body">
+      ${tabBar}
       ${notesHtml}${notesToggle}
       ${mainContent}
     </div>`;
@@ -841,10 +823,6 @@ async function init() {
     const res = await fetch('src/data/units.json');
     const data = await res.json();
     state.units = data.units;
-  try {
-    const r = await fetch('src/data/unit_overviews.json');
-    if (r.ok) state.unitOverviews = await r.json();
-  } catch {}
   } catch(e) {
     document.getElementById('app').innerHTML = `<div style="padding:40px;text-align:center;color:red">
       <h2>Failed to load units.json</h2><p>${e.message}</p>
