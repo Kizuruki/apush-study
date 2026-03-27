@@ -14,14 +14,14 @@
   <!-- API Key Modal -->
   <div id="apiKeyModal" class="modal-overlay" style="display:none">
     <div class="modal-box">
-      <h2 class="modal-title">🔑 Anthropic API Key Required</h2>
+      <h2 class="modal-title">🔑 OpenAI API Key Required</h2>
       <p style="color:#4a5568;margin-bottom:16px;font-size:14px;line-height:1.6">
         This app uses Claude to generate AP-quality questions for every topic.
         Your key is stored only in your browser (localStorage) and never sent anywhere except Anthropic's API.
       </p>
-      <input type="password" id="apiKeyInput" placeholder="sk-ant-api03-..." class="api-key-input">
+      <input type="password" id="apiKeyInput" placeholder="sk-..." class="api-key-input">
       <p style="font-size:12px;color:#718096;margin:8px 0 16px">
-        Get your key at <a href="https://console.anthropic.com" target="_blank" style="color:#5a67d8">console.anthropic.com</a>
+        Get your key at <a href="https://platform.openai.com" target="_blank" ...>platform.openai.com</a>
       </p>
       <div style="display:flex;gap:10px">
         <button onclick="saveApiKey()" class="btn btn-primary" style="flex:1">Save & Continue</button>
